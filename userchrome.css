@@ -1,0 +1,434 @@
+/* For styling the entire Joplin app (except the rendered Markdown, which is defined in `userstyle.css`) */
+
+:root {
+  --white: #D9E0EE;
+  --black: #161320;
+  --red: #F28FAD;
+  --orange: #F8BD96;
+  --yellow: #FAE3B0;
+  --darker-yellow: #C09A45;
+  --green: #ABE9B3;
+  --cyan: #89DCEB;
+  --blue: #96CDFB;
+  --paleblue: #99CDF7;
+  --purple: #DDB6F2;
+  --pink: #F5C2E7;
+  --violet: #BB80B3;
+  --grey: #575268;
+
+  --darkest: #1A1826;
+  --darker: #1E1E2E;
+  --dark: #1D1D2F;
+  --light: #C9CFFF;
+  --lighter-grey: #C3BAC6;
+  --light-grey: #988BA2;
+  --accent-color: #80CBC4;
+  --accent-color-darker: #5BA59E;
+
+  --panel-foreground: #6E6C7E;
+  --panel-foreground-active: var(--accent-color);
+  --panel-foreground-hover: var(--white);
+
+  --font-face: "Noto Sans", Arial, Helvetica, sans-serif;
+  --font-mono: "Roboto Mono", Courier, monospace;
+  --font-size: 13px;
+  --icon-size: 16px;
+
+  --regular: 400;
+  --bolder: 600;
+
+  --scroll-radius: 3px;
+
+  --opacity-0-8: 0.8;
+}
+
+* {
+  font-family: var(--font-face) !important;
+}
+
+html, body {
+  background-color: var(--darker) !important;
+  font-size: var(--font-size) !important;
+  font-weight: var(--regular) !important;
+  color: var(--light) !important;
+}
+
+.rli-root {
+  background-color: var(--darker) !important;
+}
+
+/* Icons */
+.fa, .far, .fas {
+  font-weight: 900 !important;
+  font-family: "Font Awesome 5 Free" !important;
+  font-size: var(--icon-size) !important;
+}
+
+::placeholder {
+  color: var(--accent-color) !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark) !important;
+  border-radius: var(--scroll-radius) !important;
+}
+
+/*********************************************************************************
+* PANELS
+*********************************************************************************/
+
+/* General panel style */
+.resizableLayoutItem > div {
+  min-width: 200px !important;
+  background-color: var(--darker) !important;
+}
+
+/*********************************************************************************
+* SIDEBAR
+*********************************************************************************/
+
+.sidebar {
+  background-color: var(--darker) !important;
+  text-transform: uppercase;
+  font-weight: var(--bolder);
+}
+
+/* Hide "All notes" icon */
+i.icon-notes {
+  display: none !important;
+}
+
+/* FOLDERS */
+
+/* "Add new notebook" button */
+.sidebar > div > div > button span {
+  color: var(--accent-color) !important;
+}
+
+.sidebar > div > div > button:hover {
+  opacity: var(--opacity-0-8);
+}
+
+.folders .list-item-container, 
+.folders .list-item-container:hover {
+  background-color: transparent;
+}
+
+.folders .list-item-container a {
+  text-transform: initial;
+  color: var(--panel-foreground) !important;
+  font-weight: var(--regular);
+}
+
+.folders .list-item-container a:focus {
+  color: var(--panel-foreground-active) !important;
+  background-color: none !important;
+}
+
+.folders .list-item-container a:hover {
+  color: var(--panel-foreground-hover) !important;
+}
+
+/* TAGS */
+
+.tags .list-item-container, 
+.tags .list-item-container:hover {
+  display: inline-block;
+  line-height: 0 !important;
+  padding: 0 !important;
+  height: auto !important;
+  background-color: transparent;
+}
+
+.tags .list-item-container a {
+  padding-left: 12px !important;
+  text-transform: initial;
+  color: var(--panel-foreground) !important;
+  font-weight: var(--regular);
+}
+
+.tags .list-item-container a:focus {
+  color: var(--panel-foreground-active) !important;
+}
+
+.tags .list-item-container a:hover {
+  color: var(--panel-foreground-hover) !important;
+}
+
+/* SYNCHRONIZATION AREA */
+
+.sidebar > div:last-of-type {
+  background-color: none !important;
+}
+
+.sidebar > div:last-of-type > button {
+  background-color: var(--accent-color) !important;
+  border: 0px !important;
+  text-transform: uppercase;
+  font-size: var(--font-size) !important;
+}
+
+.sidebar > div:last-of-type > button:hover {
+  opacity: var(--opacity-0-8);
+}
+
+.sidebar > div:last-of-type > button > span {
+  color: var(--dark) !important;
+}
+
+/*********************************************************************************
+*NOTE LIST
+*********************************************************************************/
+
+.note-list {
+  background-color: var(--darker) !important;
+  border: none !important;
+}
+
+/* Empty notelist */
+.cLdGCO, .cLdGCO > div {
+  background-color: var(--darker) !important;
+}
+
+/* Remove border - introduced in 1.3.7 */
+.rli-noteList div {
+  border: none !important;
+}
+
+/* BUTTONS SEARCH, SORT NOTES, NEW NOTE AND NEW TASK */
+
+div[height="50"] {
+  background-color: var(--darker) !important;
+}
+
+div[height="50"] input {
+  border: none !important;
+  color: var(--accent-color) !important;
+  background-color: var(--darkest) !important;
+}
+
+div[height="50"] button {
+  background: transparent !important;
+  color: var(--accent-color) !important;
+  border: 0 !important;
+}
+
+div[height="50"] button:hover {
+  opacity: var(--opacity-0-8);
+}
+
+div[height="50"] button span {
+  color: var(--accent-color) !important;
+}
+
+/* LIST OF NOTES */
+
+.note-list .list-item-container {
+  background-color: var(--darker) !important;
+}
+
+.note-list .list-item-container:hover {
+  background-color: var(--darkest) !important;
+}
+
+.item-list.note-list .list-item-container::before {
+  border: none !important;
+}
+
+.note-list .list-item-container a {
+  text-transform: initial;
+  color: var(--panel-foreground) !important;
+  font-weight: var(--regular);
+}
+
+.note-list .list-item-container a:focus {
+  color: var(--panel-foreground-active) !important;
+  background-color: var(--darkest) !important;
+}
+
+.note-list .list-item-container a:hover {
+  color: var(--panel-foreground-hover) !important;
+}
+
+/* Add "..." to notes with long titles */
+.item-list.note-list .list-item-container > a > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*********************************************************************************
+* EDITOR
+*********************************************************************************/
+
+/* EDITOR TOOLBAR */
+
+/* Title */
+.rli-editor .kYItFT, .kYItFT > input {
+  padding-top: 5px;
+  background-color: var(--darker) !important;
+}
+
+.editor-toolbar {
+  background-color: transparent !important;
+}
+
+.editor-toolbar > div > a:hover {
+  opacity: var(--opacity-0-8);
+}
+
+/* Hide "Spell checker" button */
+.editor-toolbar a[title="Spell checker"] {
+display: none !important;
+}
+
+/* Hide "Markdown/Richtext editor" Button */
+.tox-tbtn {
+display: none !important;
+}
+/* Breadcrumbs (In:...) */
+.cJOYJm {
+  background-color: var(--accent-color) !important;
+  margin: 0px !important;
+  padding: 5px !important;
+  font-size: var(--font-size) !important;
+}
+
+.cJOYJm:hover {
+  opacity: var(--opacity-0-8);
+}
+
+/* CONTENT */
+
+/* Empty notebook */
+.rli-editor > div > div:empty {
+  background-color: var(--darker) !important;
+}
+
+/* Editor layout splitter */
+.rli-editor > div > div > div > div > div > div > div:last-of-type {
+  border-color: var(--dark) !important;
+}
+
+/* NOTE SEARCH BAR */
+
+.note-search-bar, .note-search-bar > div > div {
+  background-color: var(--darkest) !important;
+  width: 100%;
+  border: 0 !important;
+}
+
+.note-search-bar input {
+  border: 0 !important;
+  padding: 5px;
+  color: var(--accent-color) !important;
+  background-color: var(--dark) !important;
+}
+
+/* TAGS */
+
+.tag-bar {
+  background-color: transparent !important;
+}
+
+.tag-list > span {
+  color: var(--accent-color) !important;
+  background-color: var(--darkest) !important;
+}
+
+/* Hide "Click to add tags..."*/
+a[Title="Tags"] + div > span {
+  display: none !important;
+}
+
+/*********************************************************************************
+* EDITOR (CODE MIRROR)
+*********************************************************************************/
+
+/* A summary of existing classes can be found here: 
+https://discourse.joplinapp.org/t/share-your-css/1730/221 */
+
+.cm-s-material-darker.CodeMirror {
+  background-color: var(--darker) !important;
+  color: var(--light) !important
+}
+
+/* Header */
+.cm-header {
+  color: var(--blue) !important;
+}
+
+/* Italics/Emphasis, Bold, BoldItalics */
+.cm-em, .cm-strong, .cm-strong.cm-em {
+  color: var(--red) !important;
+}
+
+/* Lists (Bullet/number/todo) */
+.cm-variable-2, .cm-variable-3, .cm-keyword {
+  color: var(--light) !important;
+}
+
+.cm-s-material-darker .cm-variable-2.cm-rm-list-token {
+	color: var(--cyan) !important;
+}
+
+/* Links (link) */
+.cm-url {
+  color: var(--yellow) !important;
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Links (text) */
+.cm-link-text {
+  color: var(--blue) !important;
+}
+
+/* Comment outside code block */
+pre.CodeMirror-line span.cm-comment {
+	color: var(--white) !important;
+  background-color: none !important;
+  border: 0 !important;
+}
+
+
+div.CodeMirror span.cm-comment.cm-jn-inline-code {
+	background-color: transparent !important;
+	padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* Code Block Text */
+div.CodeMirror span.cm-comment:not(.cm-jn-inline-code) {
+  color: var(--white) !important;
+  background-color: transparent !important;
+}
+
+/* Horizontal Line */
+.cm-hr {
+  color: var(--grey) !important;
+}
+
+/* Rich Markdown Extra CSS Classes
+Please opt in "Add additional CSS classes for enhanced customization" in plugin
+settings, see https://github.com/CalebJohn/joplin-rich-markdown#extra-css */
+
+.cm-header.cm-rm-header-token {
+  color: var(--green) !important;
+}
+
+.cm-strong.cm-rm-strong-token {
+  color: var(--cyan) !important;
+}
+
+pre.cm-rm-blockquote.CodeMirror-line {
+  font-style: italic !important;
+}
+pre.cm-jn-code-block.CodeMirror-line {
+    background-color: var(--darkest) !important;
+}
+.CodeMirror-cursor {
+    border-left: 1px solid var(--blue) !important;
+    border-right: none !important;
+    width: 0 !important;
+}
