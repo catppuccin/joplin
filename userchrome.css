@@ -109,21 +109,22 @@ i.icon-notes {
 .sidebar > div > div > button:hover {
   opacity: var(--opacity-0-8);
 }
-
-.folders .list-item-container, 
+.folders .list-item-container {
+    background-color: var(--darker) !important;
+}
 .folders .list-item-container:hover {
-  background-color: transparent;
+  background-color: var(--darkest) !important;
 }
 
 .folders .list-item-container a {
   text-transform: initial;
-  color: var(--panel-foreground) !important;
+  color: var(--white) !important;
   font-weight: var(--regular);
 }
 
 .folders .list-item-container a:focus {
-  color: var(--panel-foreground-active) !important;
-  background-color: none !important;
+  color: var(--blue) !important;
+  background-color: var(--darkest) !important;
 }
 
 .folders .list-item-container a:hover {
@@ -131,20 +132,25 @@ i.icon-notes {
 }
 
 /* TAGS */
-
-.tags .list-item-container, 
+.tags .list-item-container {
+    display: inline-block;
+    line-height: 0 !important;
+    padding: 0 !important;
+    height: auto !important;
+    background-color: var(--darker) !important;
+}
 .tags .list-item-container:hover {
   display: inline-block;
   line-height: 0 !important;
   padding: 0 !important;
   height: auto !important;
-  background-color: transparent;
+  background-color: var(--darkest) !important;
 }
 
 .tags .list-item-container a {
   padding-left: 12px !important;
   text-transform: initial;
-  color: var(--panel-foreground) !important;
+  color: var(--white) !important;
   font-weight: var(--regular);
 }
 
@@ -153,7 +159,8 @@ i.icon-notes {
 }
 
 .tags .list-item-container a:hover {
-  color: var(--panel-foreground-hover) !important;
+  color: var(--white) !important;
+  background-color: var(--darkest) !important;
 }
 
 /* SYNCHRONIZATION AREA */
@@ -238,7 +245,7 @@ div[height="50"] button span {
 
 .note-list .list-item-container a {
   text-transform: initial;
-  color: var(--panel-foreground) !important;
+  color: var(--white) !important;
   font-weight: var(--regular);
 }
 
@@ -248,7 +255,7 @@ div[height="50"] button span {
 }
 
 .note-list .list-item-container a:hover {
-  color: var(--panel-foreground-hover) !important;
+  color: var(--white) !important;
 }
 
 /* Add "..." to notes with long titles */
@@ -350,7 +357,7 @@ https://discourse.joplinapp.org/t/share-your-css/1730/221 */
 
 .cm-s-material-darker.CodeMirror {
   background-color: var(--darker) !important;
-  color: var(--light) !important
+  color: var(--light) !important;
 }
 
 /* Header */
@@ -365,11 +372,11 @@ https://discourse.joplinapp.org/t/share-your-css/1730/221 */
 
 /* Lists (Bullet/number/todo) */
 .cm-variable-2, .cm-variable-3, .cm-keyword {
-  color: var(--light) !important;
+  color: var(--white) !important;
 }
 
 .cm-s-material-darker .cm-variable-2.cm-rm-list-token {
-	color: var(--cyan) !important;
+	color: var(--white) !important;
 }
 
 /* Links (link) */
@@ -383,7 +390,10 @@ https://discourse.joplinapp.org/t/share-your-css/1730/221 */
 .cm-link-text {
   color: var(--blue) !important;
 }
-
+pre.CodeMirror-line {
+    color: var(--white) !important;
+    background-color: none !important;
+}
 /* Comment outside code block */
 pre.CodeMirror-line span.cm-comment {
 	color: var(--white) !important;
@@ -400,7 +410,7 @@ div.CodeMirror span.cm-comment.cm-jn-inline-code {
 
 /* Code Block Text */
 div.CodeMirror span.cm-comment:not(.cm-jn-inline-code) {
-  color: var(--white) !important;
+  color: var(--lighter-grey) !important;
   background-color: transparent !important;
 }
 
@@ -431,4 +441,7 @@ pre.cm-jn-code-block.CodeMirror-line {
     border-left: 1px solid var(--blue) !important;
     border-right: none !important;
     width: 0 !important;
+}
+pre.cm-jn-code-block.CodeMirror-line:selection {
+    background-color: var(--lighter-grey) !important; 
 }
