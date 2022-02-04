@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ghostx31/joplin/main/assets/joplin-1.png"/>
+  <img src="https://raw.githubusercontent.com/ghostx31/joplin/main/assets/joplin-3.png"/>
 </p>
 
 ## Usage
