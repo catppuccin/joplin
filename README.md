@@ -18,7 +18,7 @@
 ## Usage
 
 1. Copy the contents of `userchrome.css` and `userstyle.css` to `~/.config/joplin-desktop` for Linux users and `C:\users\<name>\.config\joplin-desktop` for Windows users.
-4. Launch Joplin. 
+2. You need the [Rich Markdown Plugin](https://github.com/CalebJohn/joplin-rich-markdown) and need to enable extra CSS options by going into `Options -> Rich Markdown -> Add additional CSS classes for enhanced customization`.
 
 ## 🙋 FAQ (optional)
 
