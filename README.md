@@ -25,6 +25,7 @@
 - Q: **_"My font looks bad"_**
   A: The theme uses Noto Sans and Roboto Mono fonts along with Font Awesome 5 for icons.
 - Q: **_"How to change the colours/fonts?"_**
+
   A: The colours/fonts are ddefined inside the two `.css` files. Change the colours and fonts from their to suit your needs.
 
 ## 💝 Thanks to
