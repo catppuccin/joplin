@@ -1,3 +1,4 @@
+/* Original theme at https://github.com/stysebae/joplin-vsc-material-theme, modified for Catppuccin. */
 /* For styling the entire Joplin app (except the rendered Markdown, which is defined in `userstyle.css`) */
 
 :root {
@@ -6,14 +7,10 @@
   --red: #F28FAD;
   --orange: #F8BD96;
   --yellow: #FAE3B0;
-  --darker-yellow: #C09A45;
   --green: #ABE9B3;
   --cyan: #89DCEB;
   --blue: #96CDFB;
-  --paleblue: #99CDF7;
-  --purple: #DDB6F2;
   --pink: #F5C2E7;
-  --violet: #BB80B3;
   --grey: #575268;
 
   --darkest: #1A1826;
@@ -41,7 +38,7 @@
 
   --opacity-0-8: 0.8;
 }
-
+/* Font used by Joplin */
 * {
   font-family: var(--font-face) !important;
 }
@@ -52,7 +49,10 @@ html, body {
   font-weight: var(--regular) !important;
   color: var(--light) !important;
 }
-
+.CodeMirror-selected {
+    /* background-color: var(--lighter-grey) !important; */
+    background: #6B6B6B !important;
+}
 .rli-root {
   background-color: var(--darker) !important;
 }
@@ -94,7 +94,8 @@ html, body {
   font-weight: var(--bolder);
 }
 
-/* Hide "All notes" icon */
+/* Hide "All notes" icon 
+ * Comment this next block if you want the "All notes" icon */
 i.icon-notes {
   display: none !important;
 }
@@ -163,7 +164,7 @@ i.icon-notes {
   background-color: var(--darkest) !important;
 }
 
-/* SYNCHRONIZATION AREA */
+/* SYNCHRONIZATION */
 
 .sidebar > div:last-of-type {
   background-color: none !important;
@@ -293,6 +294,7 @@ display: none !important;
 .tox-tbtn {
 display: none !important;
 }
+
 /* Breadcrumbs (In:...) */
 .cJOYJm {
   background-color: var(--accent-color) !important;
@@ -352,9 +354,6 @@ a[Title="Tags"] + div > span {
 * EDITOR (CODE MIRROR)
 *********************************************************************************/
 
-/* A summary of existing classes can be found here: 
-https://discourse.joplinapp.org/t/share-your-css/1730/221 */
-
 .cm-s-material-darker.CodeMirror {
   background-color: var(--darker) !important;
   color: var(--light) !important;
@@ -401,7 +400,24 @@ pre.CodeMirror-line span.cm-comment {
   border: 0 !important;
 }
 
+/* Codeblock selection colour */
+pre.CodeMirror-line span.CodeMirror-selectedtext {
+    background: #6B6B6B !important;
+}
 
+pre.cm-jn-code-block.CodeMirror-line span.cm-comment.cm-jn-monospace.CodeMirror-selectedtext {
+    background: #6B6B6B !important;
+}
+pre.cm-jn-code-block.CodeMirror-line::selection {
+    background: #6B6B6B !important;
+}
+div.cm-jn-code-block-background.CodeMirror-linebackground::selection {
+    background: #6B6B6B !important;
+}
+pre.cm-jn-code-block.CodeMirror-line::selection span {
+    background: #6B6B6B !important;
+}
+/*  */
 div.CodeMirror span.cm-comment.cm-jn-inline-code {
 	background-color: transparent !important;
 	padding-right: 0 !important;
@@ -414,11 +430,30 @@ div.CodeMirror span.cm-comment:not(.cm-jn-inline-code) {
   background-color: transparent !important;
 }
 
+/* Code block background */
+pre.cm-jn-code-block.CodeMirror-line {
+    background-color: var(--darkest) !important;
+}
+
 /* Horizontal Line */
 .cm-hr {
   color: var(--grey) !important;
 }
 
+/* Cursor colour */
+.CodeMirror-cursor {
+    border-left: 1px solid var(--blue) !important;
+    border-right: none !important;
+    width: 0 !important;
+}
+
+/* Trying to make the selection colour lighter-grey when selecting in a 
+ * code block but does not work. No documentation found for this as of yet. */
+
+/* pre.cm-jn-code-block.CodeMirror-line::selection { */
+/*     background-color: var(--lighter-grey) !important; */
+/* } */
+/*  */
 /* Rich Markdown Extra CSS Classes
 Please opt in "Add additional CSS classes for enhanced customization" in plugin
 settings, see https://github.com/CalebJohn/joplin-rich-markdown#extra-css */
@@ -434,14 +469,4 @@ settings, see https://github.com/CalebJohn/joplin-rich-markdown#extra-css */
 pre.cm-rm-blockquote.CodeMirror-line {
   font-style: italic !important;
 }
-pre.cm-jn-code-block.CodeMirror-line {
-    background-color: var(--darkest) !important;
-}
-.CodeMirror-cursor {
-    border-left: 1px solid var(--blue) !important;
-    border-right: none !important;
-    width: 0 !important;
-}
-pre.cm-jn-code-block.CodeMirror-line:selection {
-    background-color: var(--lighter-grey) !important; 
-}
+

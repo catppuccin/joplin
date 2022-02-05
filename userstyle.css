@@ -161,7 +161,7 @@ td {
 *********************************************************************************/
 
 ::selection {
-	background-color: var(--accent-color) !important;
+	background-color: var(--blue) !important;
   color: var(--dark) !important;
 }
 
