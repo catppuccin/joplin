@@ -446,13 +446,29 @@ pre.cm-jn-code-block.CodeMirror-line {
     border-right: none !important;
     width: 0 !important;
 }
+.cm-fat-cursor div.CodeMirror-cursor {
+    width: 10px !important;
+    border: 0 !important;
+    background: var(--blue) !important; 
+}
+.cm-fat-cursor div.CodeMirror-cursors {
+    z-index: 1 !important;
+}
+.cm-fat-cursor-mark {
+    background-color: rgba(150, 205, 251, 0.5) !important;
+/*      -webkit-animation: blink 1.06s steps(1) infinite !important;  */
+     /* -moz-animation: blink 1.06s steps(1) infinite !important;  */
+     /* animation: blink 1.06s steps(1) infinite !important;  */
+}
 
-/* Trying to make the selection colour lighter-grey when selecting in a 
- * code block but does not work. No documentation found for this as of yet. */
-
-/* pre.cm-jn-code-block.CodeMirror-line::selection { */
-/*     background-color: var(--lighter-grey) !important; */
-/* } */
+.cm-animate-fat-cursor {
+    width: auto !important;
+    border: 0;
+/*  [>    -webkit-animation: blink 1.06s steps(1) infinite !important; <] */
+/*     [> -moz-animation: blink 1.06s steps(1) infinite !important; <] */
+/*     [> animation: blink 1.06s steps(1) infinite !important; <] */
+    background-color: var(--blue) !important;
+}
 /*  */
 /* Rich Markdown Extra CSS Classes
 Please opt in "Add additional CSS classes for enhanced customization" in plugin
