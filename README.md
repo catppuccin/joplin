@@ -17,9 +17,9 @@
 
 ## Usage
 
-1. Copy the contents of `userchrome.css` and `userstyle.css` to `~/.config/joplin-desktop` for Linux users and `C:\users\<name>\.config\joplin-desktop` for Windows users.
+1. Copy the contents of `userchrome.css` and `userstyle.css` to `~/.config/joplin-desktop` for Linux users and `C:\users\<user>\.config\joplin-desktop` for Windows users.
 2. You need the [Rich Markdown Plugin](https://github.com/CalebJohn/joplin-rich-markdown) and need to enable extra CSS options by going into `Options -> Rich Markdown -> Add additional CSS classes for enhanced customization`.
-
+3. Enable the dark theme from Appearance to use the theme. 
 ## 🙋 FAQ
 
 - Q: **_"My font looks bad"_**
