@@ -12,12 +12,12 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ghostx31/joplin/test/assets/catppuccin-mocha.png"/>
+  <img src="https://raw.githubusercontent.com/ghostx31/joplin/main/assets/catppuccin-mocha.png"/>
 </p>
 
 ## Usage
 
-1. Copy the contents of `userchrome.css` and `userstyle.css` to `~/.config/joplin-desktop` for Linux users and `C:\users\<user>\.config\joplin-desktop` for Windows users.
+1. Copy the contents of `userchrome.css` and `userstyle.css` to `~/.config/joplin-desktop` for Linux users and `C:\users\<user>\.config\joplin-desktop` for Windows users. You can download the css files from the `src` folder or you can grab the zip files from releases from the right hand corner.
 2. You need the [Rich Markdown Plugin](https://github.com/CalebJohn/joplin-rich-markdown) and need to enable extra CSS options by going into `Options -> Rich Markdown -> Add additional CSS classes for enhanced customization`.
 3. Enable the dark theme from Appearance to use the theme. 
 ## 🙋 FAQ
