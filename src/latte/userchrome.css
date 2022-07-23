@@ -480,7 +480,8 @@ div.sc-fzqBkg.dDQgvd.note-count-label {
 }
 
 .sidebar > div:last-of-type > button > span {
-  color: var(--ctp-latte-crust) !important;
+  /* color: var(--ctp-latte-crust) !important; */
+  color: var(--ctp-latte-text) !important;
 }
 .sc-fzoYkl.gYkyEX {
 	color: var(--ctp-latte-text) !important;
