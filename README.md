@@ -6,20 +6,20 @@
 </h3>
 
 <p align="center">
-    <a href="https://github.com/ghostx31/joplin/stargazers"><img src="https://img.shields.io/github/stars/ghostx31/joplin?colorA=1e1e28&colorB=c9cbff&style=for-the-badge&logo=starship"></a>
-    <a href="https://github.com/ghostx31/joplin/issues"><img src="https://img.shields.io/github/issues/ghostx31/joplin?colorA=1e1e28&colorB=f7be95&style=for-the-badge"></a>
-    <a href="https://github.com/ghostx31/joplin/contributors"><img src="https://img.shields.io/github/contributors/ghostx31/joplin?colorA=1e1e28&colorB=b1e1a6&style=for-the-badge"></a>
+    <a href="https://github.com/catppuccin/joplin/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/joplin?colorA=1e1e28&colorB=c9cbff&style=for-the-badge&logo=starship"></a>
+    <a href="https://github.com/catppuccin/joplin/issues"><img src="https://img.shields.io/github/issues/catppuccin/joplin?colorA=1e1e28&colorB=f7be95&style=for-the-badge"></a>
+    <a href="https://github.com/catppuccin/joplin/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/joplin?colorA=1e1e28&colorB=b1e1a6&style=for-the-badge"></a>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ghostx31/joplin/main/assets/catppuccin-mocha.png"/>
+  <img src="https://raw.githubusercontent.com/catppuccin/joplin/main/assets/catppuccin-mocha.png"/>
 </p>
 
 ## Usage
 
 1. Download the files `userchrome.css` and `userstyle.css` from your preferred flavour from the `src/` directory.
 2. Move these files to the Joplin configuration directory:\
-   Linux/MacOS: `~/.config/joplin/`\
+   Linux/macOS: `~/.config/joplin/`\
    Windows: `C:\Users\%USERNAME%\.config\joplin\`
 3. You need the [Rich Markdown Plugin](https://github.com/CalebJohn/joplin-rich-markdown) and need to enable extra CSS options by going into `Options -> Rich Markdown -> Add additional CSS classes for enhanced customization`.
 4. Enable the dark theme from Appearance to use the theme. 
