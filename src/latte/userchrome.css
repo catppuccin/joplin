@@ -573,17 +573,22 @@ div[height="50"] button span {
 
 /* EDITOR TOOLBAR */
 input.title-input {
+	padding-top: 5px;
 	color: var(--ctp-latte-text) !important;
+	background-color: var(--ctp-latte-base) !important;
+	
 }
 /* Title */
 /* Changes frequently with updates, need to keep tabs */
-.rli-editor .cCOtNv > input {
+/* .rli-editor .cCOtNv > input {
 	padding-top: 5px;
 	background-color: var(--ctp-latte-base) !important;
-}
+} */
 .editor-toolbar {
   background-color: transparent !important;
 }
+/* Editor toolbar buttons */
+
 .editor-toolbar > div > a > span {
 	  color: var(--ctp-latte-text) !important;
 }
@@ -591,9 +596,11 @@ input.title-input {
 .editor-toolbar > div > a > span::hover {
 	color: var(--ctp-latte-lavender) !important;
 }
+
 .editor-toolbar > div > a:hover {
   opacity: var(--opacity-0-8);
   color: var(--ctp-latte-lavender) !important;
+  background-color: var(--ctp-latte-overlay0) !important;
 }
 
 /* Hide "Spell checker" button */

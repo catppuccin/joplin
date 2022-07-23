@@ -1,7 +1,7 @@
 <h3 align="center">
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/misc/transparent.png" height="30" width="0px"/>
-	Catppuccin for Joplin
+	Catppuccin for <a href="https://joplinapp.org/">Joplin</a>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/dev/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 
@@ -17,9 +17,12 @@
 
 ## Usage
 
-1. Copy the contents of `userchrome.css` and `userstyle.css` to `~/.config/joplin-desktop` for Linux users and `C:\users\<user>\.config\joplin-desktop` for Windows users. You can download the css files from the `src` folder.
-2. You need the [Rich Markdown Plugin](https://github.com/CalebJohn/joplin-rich-markdown) and need to enable extra CSS options by going into `Options -> Rich Markdown -> Add additional CSS classes for enhanced customization`.
-3. Enable the dark theme from Appearance to use the theme. 
+1. Download the files `userchrome.css` and `userstyle.css` from your preferred flavour from the `src/` directory.
+2. Move these files to the Joplin configuration directory:\
+   Linux/MacOS: `~/.config/joplin/`\
+   Windows: `C:\Users\%USERNAME%\.config\joplin\`
+3. You need the [Rich Markdown Plugin](https://github.com/CalebJohn/joplin-rich-markdown) and need to enable extra CSS options by going into `Options -> Rich Markdown -> Add additional CSS classes for enhanced customization`.
+4. Enable the dark theme from Appearance to use the theme. 
 ## 🙋 FAQ
 
 - Q: **_"My font looks bad"_**
@@ -30,6 +33,7 @@
 ## 💝 Thanks to
 
 - [stysebae](https://github.com/stysebae/joplin-vsc-material-theme) for the initial vsc-type themes on which this theme is based. 
+- [ghostx31](https://github.com/ghostx31/)
 
 &nbsp;
 
