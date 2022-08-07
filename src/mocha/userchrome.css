@@ -608,6 +608,11 @@ display: none !important;
   border-color: var(--ctp-mocha-base) !important;
 }
 
+div.sc-AxirZ.hagDvo, div.sc-AxirZ.hagDvo > div {
+  background-color: var(--ctp-mocha-mantle) !important;
+  color: var(--ctp-mocha-text) !important;
+}
+
 /* NOTE SEARCH BAR */
 .note-search-bar, .note-search-bar > div > div {
   background-color: var(--ctp-mocha-base) !important;
