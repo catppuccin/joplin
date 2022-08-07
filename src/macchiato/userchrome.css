@@ -607,6 +607,10 @@ display: none !important;
 .rli-editor > div > div > div > div > div > div > div:last-of-type {
   border-color: var(--ctp-macchiato-base) !important;
 }
+div.sc-AxirZ.hagDvo, div.sc-AxirZ.hagDvo > div {
+  background-color: var(--ctp-macchiato-mantle) !important;
+  color: var(--ctp-macchiato-text) !important;
+}
 
 /* NOTE SEARCH BAR */
 .note-search-bar, .note-search-bar > div > div {
