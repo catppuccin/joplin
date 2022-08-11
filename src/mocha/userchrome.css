@@ -359,7 +359,7 @@ html, body {
 
 /* Scrollbars */
 ::-webkit-scrollbar-thumb {
-  background-color: var(--ctp-mocha-mantle) !important;
+  background-color: var(--ctp-mocha-surface0) !important;
   border-radius: var(--scroll-radius) !important;
 }
 
@@ -682,8 +682,12 @@ a[Title="Tags"] + div > span {
   color: var(--ctp-mocha-rosewater) !important;
 }
 pre.CodeMirror-line {
-    color: var(--ctp-mocha-rosewater) !important;
+    color: var(--ctp-mocha-text) !important;
     background-color: none !important;
+}
+/* Image links in the editor */
+span.cm-string.cm-url.cm-overlay.cm-rm-link.cm-overlay.cm-rm-image {
+  color: var(--ctp-mocha-lavender) !important;
 }
 /* Comment outside code block */
 pre.CodeMirror-line span.cm-comment {
