@@ -513,12 +513,12 @@ div.modal-dialog {
 
 .modal-dialog > div > input {
   background-color: var(--ctp-macchiato-crust) !important;
-  color: var(--ctp-mocha-text) !important;
+  color: var(--ctp-macchiato-text) !important;
 }
 
 .modal-dialog > .item-list {
   background-color: var(--ctp-macchiato-crust) !important;
-  color: var(--ctp-mocha-text) !important;
+  color: var(--ctp-macchiato-text) !important;
 
 }
 
