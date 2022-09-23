@@ -615,7 +615,11 @@ div.sc-AxirZ.hagDvo, div.sc-AxirZ.hagDvo > div {
 
 /* Hide "Markdown/Richtext editor" Button */
 .tox-toolbar {
-display: none !important;
+ display: none !important;
+}
+
+.editor-toolbar button[title="Toggle editors"] {
+  display: none !important;
 }
 
 /* Breadcrumbs (In:...) - Used in tag listings */

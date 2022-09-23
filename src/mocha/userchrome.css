@@ -577,7 +577,7 @@ div[height="50"] button span {
 
 /* Hide "Spell checker" button */
 .editor-toolbar a[title="Spell checker"] {
-display: none !important;
+ display: none !important;
 }
 
 /* Hide "Markdown/Richtext editor" Button */
@@ -585,6 +585,10 @@ display: none !important;
 display: none !important;
 }
 
+/* Hide the Toggle editors button */
+.editor-toolbar button[title="Toggle editors"] {
+  display: none !important;
+}
 /* Breadcrumbs (In:...) - Used in tag listings */
 .cJOYJm {
   background-color: var(--ctp-mocha-lavender) !important;

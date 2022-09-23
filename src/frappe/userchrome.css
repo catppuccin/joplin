@@ -577,12 +577,17 @@ div[height="50"] button span {
 
 /* Hide "Spell checker" button */
 .editor-toolbar a[title="Spell checker"] {
-display: none !important;
+ display: none !important;
 }
 
 /* Hide "Markdown/Richtext editor" Button */
 .tox-toolbar {
-display: none !important;
+ display: none !important;
+}
+
+/* Hide the Toggle editors button */
+.editor-toolbar button[title="Toggle editors"] { 
+  display: none !important;
 }
 
 /* Breadcrumbs (In:...) - Used in tag listings */
