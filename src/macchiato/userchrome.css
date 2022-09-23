@@ -581,7 +581,7 @@ display: none !important;
 }
 
 /* Hide "Markdown/Richtext editor" Button */
-.tox-tbtn {
+.tox-toolbar {
 display: none !important;
 }
 
