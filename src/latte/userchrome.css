@@ -443,6 +443,7 @@ pre.CodeMirror-line span.cm-comment {
 }
 
 /* Codeblock selection colour */
+
 /* For some reason, the CodeMirror selection does not pick the colour correctly, left for now. */
 pre.CodeMirror-line span.CodeMirror-selectedtext {
 	/* background: var(--ctp-latte-surface2) !important; */
@@ -490,10 +491,13 @@ span.cm-meta.cm-jn-monospace, span.cm-builtin.cm-jn-monospace, span.cm-type.cm-j
 	  color: var(--ctp-latte-yellow) !important;
   background-color: transparent !important;
 }
+
 /* Code block background */
-pre.cm-jn-code-block.CodeMirror-line {
-    background-color: var(--ctp-latte-crust) !important;
+
+div.CodeMirror div.cm-jn-code-block-background {
+    background-color: var(--ctp-latte-mantle) !important;
 }
+
 span.cm-operator.cm-jn-monospace {
 	color: var(--ctp-latte-blue) !important;
 }

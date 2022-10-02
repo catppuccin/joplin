@@ -456,7 +456,7 @@ div.CodeMirror span.cm-comment:not(.cm-jn-inline-code) {
 }
 
 /* Code block background */
-pre.cm-jn-code-block.CodeMirror-line {
+div.CodeMirror div.cm-jn-code-block-background {
     background-color: var(--ctp-macchiato-mantle) !important;
 }
 
