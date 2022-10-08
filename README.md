@@ -25,9 +25,9 @@
 4. Enable the dark theme from Appearance to use the theme. 
 ## 🙋 FAQ
 
-- Q: **_"My font looks bad"_**
+- Q: **_"My font looks bad"_**\
   A: The theme uses Noto Sans and Roboto Mono fonts along with Font Awesome 5 for icons. You need to install those fonts for the font to render correctly.
-- Q: **_"How to change the colours/fonts?"_**
+- Q: **_"How to change the colours/fonts?"_**\
   A: The colours/fonts are defined inside the two `.css` files. Change the colours and fonts from these files to suit your needs.
 
 ## 💝 Thanks to
