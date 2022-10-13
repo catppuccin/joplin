@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/catppuccin/joplin/main/assets/sample.webp"/>
+  <img src="https://raw.githubusercontent.com/catppuccin/joplin/main/assets/screenshot.webp"/>
 </p>
 
 ## Usage
