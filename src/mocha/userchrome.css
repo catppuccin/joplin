@@ -32,12 +32,12 @@
 	--font-mono: "Roboto Mono", Courier, monospace;
 	--font-size: 13px;
 	--icon-size: 16px;
-  
+
 	--regular: 400;
 	--bolder: 600;
-  
+
 	--scroll-radius: 3px;
-  
+
 	--opacity-0-8: 0.8;
 }
 
@@ -97,7 +97,7 @@ html, body {
   font-weight: var(--bolder);
 }
 
-/* Hide "All notes" icon 
+/* Hide "All notes" icon
  * Comment this next block if you want the "All notes" icon */
 i.icon-notes {
   display: none !important;
@@ -234,6 +234,38 @@ div[height="50"] button span {
   color: var(--ctp-mocha-text) !important;
 }
 
+.sc-jfTVlA.gzxTaP {
+  background-color: var(--ctp-mocha-mantle) !important;
+}
+.new-note-todo-buttons > button {
+  background-color: var(--ctp-mocha-lavender) !important;
+  border: none !important;
+}
+.gsyrrp.new-todo-button > span {
+  color: var(--ctp-mocha-crust) !important;
+}
+
+.search-bar {
+  background-color: var(--ctp-mocha-crust) !important;
+}
+
+.icon-search {
+  color: var(--ctp-mocha-lavender) !important;
+}
+
+.sort-order-reverse-button {
+  background-color: var(--ctp-mocha-crust) !important;
+}
+.sort-order-reverse-button {
+  background-color: var(--ctp-mocha-crust) !important;
+}
+
+.fa-calendar-alt {
+  color: var(--ctp-mocha-lavender) !important;
+}
+.fa-long-arrow-alt-up {
+  color: var(--ctp-mocha-lavender) !important;
+}
 /* LIST OF NOTES */
 
 .note-list .list-item-container {
@@ -280,6 +312,11 @@ div[height="50"] button span {
 .rli-editor .cCOtNv > input {
 	padding-top: 5px;
 	background-color: var(--ctp-mocha-base) !important;
+}
+
+.title-input {
+  background-color: var(--ctp-mocha-base) !important;
+  color: var(--ctp-mocha-text) !important;
 }
 .editor-toolbar {
   background-color: transparent !important;
@@ -474,7 +511,7 @@ div.CodeMirror div.cm-jn-code-block-background {
 .cm-fat-cursor div.CodeMirror-cursor {
     width: 10px !important;
     border: 0 !important;
-    background: var(--ctp-mocha-rosewater) !important; 
+    background: var(--ctp-mocha-rosewater) !important;
 }
 .cm-fat-cursor div.CodeMirror-cursors {
     z-index: 1 !important;

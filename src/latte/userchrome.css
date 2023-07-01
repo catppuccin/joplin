@@ -31,12 +31,12 @@
 	--font-mono: "Roboto Mono", Courier, monospace;
 	--font-size: 13px;
 	--icon-size: 16px;
-  
+
 	--regular: 400;
 	--bolder: 600;
-  
+
 	--scroll-radius: 3px;
-  
+
 	--opacity-0-8: 0.8;
 }
 
@@ -97,7 +97,11 @@ html, body {
   font-weight: var(--bolder);
 }
 
-/* Hide "All notes" icon 
+.bWPSUP > i, .bWPSUP > span {
+  color: var(--ctp-latte-text) !important;
+}
+
+/* Hide "All notes" icon
  * Comment this next block if you want the "All notes" icon */
 i.icon-notes {
   display: none !important;
@@ -143,6 +147,9 @@ div.sc-fzqBkg.dDQgvd.note-count-label {
   color: var(--ctp-latte-text) !important;
 }
 
+.note-count-label {
+  color: var(--ctp-latte-subtext1) !important;
+}
 /* TAGS */
 .tags .list-item-container {
     display: inline-block;
@@ -201,6 +208,10 @@ div.sc-fzqBkg.dDQgvd.note-count-label {
 	color: var(--ctp-latte-text) !important;
 }
 
+/* Sync complete information */
+.hdpRiC {
+  color: var(--ctp-latte-text) !important;
+}
 /*********************************************************************************
 *NOTE LIST
 *********************************************************************************/
@@ -244,6 +255,43 @@ div[height="50"] button:hover {
 
 div[height="50"] button span {
   color: var(--ctp-latte-text) !important;
+}
+
+.chwTAE {
+  background-color: var(--ctp-latte-mantle) !important;
+}
+
+.sc-jfTVlA.gzxTaP {
+  background-color: var(--ctp-latte-mantle) !important;
+}
+.new-note-todo-buttons > button {
+  background-color: var(--ctp-latte-lavender) !important;
+  border: none !important;
+}
+.gsyrrp.new-todo-button > span {
+  color: var(--ctp-latte-mantle) !important;
+}
+
+.search-bar {
+  background-color: var(--ctp-latte-mantle) !important;
+}
+
+.icon-search {
+  color: var(--ctp-latte-lavender) !important;
+}
+
+.sort-order-reverse-button {
+  background-color: var(--ctp-latte-mantle) !important;
+}
+.sort-order-reverse-button {
+  background-color: var(--ctp-latte-mantle) !important;
+}
+
+.fa-calendar-alt {
+  color: var(--ctp-latte-lavender) !important;
+}
+.fa-long-arrow-alt-up {
+  color: var(--ctp-latte-lavender) !important;
 }
 
 /* LIST OF NOTES */
@@ -290,14 +338,9 @@ input.title-input {
 	padding-top: 5px;
 	color: var(--ctp-latte-text) !important;
 	background-color: var(--ctp-latte-base) !important;
-	
+
 }
-/* Title */
-/* Changes frequently with updates, need to keep tabs */
-/* .rli-editor .cCOtNv > input {
-	padding-top: 5px;
-	background-color: var(--ctp-latte-base) !important;
-} */
+
 .editor-toolbar {
   background-color: transparent !important;
 }
@@ -397,6 +440,9 @@ a[Title="Tags"] + div > span {
   color: var(--ctp-latte-text) !important;
 }
 
+.CodeMirror-lines {
+  background-color: var(--ctp-latte-base) !important;
+}
 /* Header */
 .cm-header {
   color: var(--ctp-latte-lavender) !important;
@@ -414,6 +460,10 @@ a[Title="Tags"] + div > span {
 
 .cm-s-material-darker .cm-variable-2.cm-rm-list-token {
 	color: var(--ctp-latte-text) !important;
+}
+
+.CodeMirror-vscrollbar {
+  background-color: var(--ctp-latte-base) !important;
 }
 
 /* Links (link) */
@@ -516,7 +566,7 @@ span.cm-operator.cm-jn-monospace {
 .cm-fat-cursor div.CodeMirror-cursor {
     width: 10px !important;
     border: 0 !important;
-    background: var(--ctp-latte-rosewater) !important; 
+    background: var(--ctp-latte-rosewater) !important;
 }
 .cm-fat-cursor div.CodeMirror-cursors {
     z-index: 1 !important;
