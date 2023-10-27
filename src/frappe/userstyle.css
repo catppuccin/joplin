@@ -143,20 +143,16 @@ blockquote {
 * TABLES
 *********************************************************************************/
 
-table {
-  border: 0 !important;
-}
-
 th {
-  border: 0 !important;
+  border: 1px solid var(--ctp-frappe-text) !important;
   color: var(--ctp-frappe-text) !important;
   border-bottom: 1px solid var(--ctp-frappe-text) !important;
 }
 
 td {
-  border: 0 !important;
+  border: 1px solid var(--ctp-frappe-text) !important;
   color: var(--ctp-frappe-text) !important;
-  border-bottom: 1px solid var(--ctp-frappe-mantle) !important;
+  border-bottom: 1px solid var(--ctp-frappe-text) !important;
 }
 
 /*********************************************************************************
@@ -230,9 +226,20 @@ mark[data-markjs] {
   p, ul, ol, li {
     color: var(--black) !important;
   }
-  
+
   strong {
     color: var(--black) !important;
+  }
+  th {
+  border: 1px solid var(--black) !important;
+  color: var(--black) !important;
+  border-bottom: 1px solid var(--black) !important;
+  }
+
+  td {
+  border: 1px solid var(--black) !important;
+  color: var(--black) !important;
+  border-bottom: 1px solid var(--black) !important;
   }
 
   h1 {
@@ -258,16 +265,15 @@ mark[data-markjs] {
 
 /* Inline code */
 .inline-code {
-  background-color: transparent !important;
+  background-color: #F8F8F8 !important;
   border: 0 !important;
   font-family: var(--font-mono) !important;
   /* color: var(--ctp-frappe-yellow) !important; */
-  color: #1E1E2E !important;
   font-size: 14px !important;
 }
 
 pre, .hljs {
-  background-color: var(--lighter-grey) !important;
+  background-color: #F8F8F8 !important;
   font-family: var(--font-mono) !important;
   padding: 10px !important;
   color: var(--ctp-frappe-crust) !important;
@@ -276,13 +282,13 @@ pre, .hljs {
 }
 
 blockquote {
-  background-color: var(--lighter-grey) !important;
+  background-color: #F8F8F8 !important;
   padding: 10px !important;
   color: var(--ctp-frappe-crust) !important;
   font-size: 14px !important;
   font-style: italic !important;
   border: 0 !important;
-  border-left: 5px solid var(--light-grey) !important;
+  border-left: 5px solid #E8E8E8 !important;
 }
 
 }
