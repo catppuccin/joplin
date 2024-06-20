@@ -1,39 +1,12 @@
 /* Style for rendered Markdown */
-
 :root {
-  --ctp-mocha-rosewater: #f5e0dc;
-	--ctp-mocha-flamingo: #f2cdcd;
-	--ctp-mocha-pink: #f5c2e7;
-	--ctp-mocha-mauve: #cba6f7;
-	--ctp-mocha-red: #f38ba8;
-	--ctp-mocha-maroon: #eba0ac;
-	--ctp-mocha-peach: #fab387;
-	--ctp-mocha-yellow: #f9e2af;
-	--ctp-mocha-green: #a6e3a1;
-	--ctp-mocha-teal: #94e2d5;
-	--ctp-mocha-sky: #89dceb;
-	--ctp-mocha-sapphire: #74c7ec;
-	--ctp-mocha-blue: #87b0f9;
-	--ctp-mocha-lavender: #b4befe;
-	--ctp-mocha-text: #c6d0f5;
-	--ctp-mocha-subtext1: #b3bcdf;
-	--ctp-mocha-subtext0: #a1a8c9;
-	--ctp-mocha-overlay2: #8e95b3;
-	--ctp-mocha-overlay1: #7b819d;
-	--ctp-mocha-overlay0: #696d86;
-	--ctp-mocha-surface2: #565970;
-	--ctp-mocha-surface1: #43465a;
-	--ctp-mocha-surface0: #313244;
-	--ctp-mocha-base: #1e1e2e;
-	--ctp-mocha-mantle: #181825;
-	--ctp-mocha-crust: #11111b;
   --white: #D9E0EE;
   --black: #000000;
   --light: #C9CFFF;
   --lighter-grey: #C3BAC6;
   --light-grey: #988BA2;
 
-	--font-face: "Noto Sans", Arial, Helvetica, sans-serif;
+  --font-face: "Noto Sans", Arial, Helvetica, sans-serif;
   --font-mono: "Roboto Mono", Courier, monospace;
   --font-size: 13px;
   --icon-size: 16px;
@@ -47,27 +20,27 @@
 }
 
 #rendered-md, body, th, td {
-  background-color: var(--ctp-mocha-base) !important;
+  background-color: #1E1E2E !important;
   font-family: var(--font-face) !important;
 }
 
 p, ul, ol, li {
-  color: var(--ctp-mocha-text) !important;
+  color: #CDD6F4 !important;
 }
 
 strong {
-  color: var(--ctp-mocha-text) !important;
+  color: #CDD6F4 !important;
 }
 
 hr {
   border: none;
-  border-bottom: 1px solid var(--ctp-mocha-base) !important;
+  border-bottom: 1px solid #1E1E2E !important;
   margin: 2.5em 0 !important;
 }
 
 /* Scrollbars */
 ::-webkit-scrollbar-thumb {
-  background-color: var(--ctp-mocha-base) !important;
+  background-color: #1E1E2E !important;
   border-radius: var(--scroll-radius) !important;
 }
 
@@ -76,7 +49,7 @@ hr {
 *********************************************************************************/
 
 h1 {
-  border-bottom: 1px solid var(--ctp-mocha-base) !important;
+  border-bottom: 1px solid #1E1E2E !important;
   font-weight: var(--bolder) !important;
 }
 
@@ -90,7 +63,7 @@ h2, h3, h4, h5, h6 {
 *********************************************************************************/
 
 a {
-  color: var(--ctp-mocha-rosewater) !important;
+  color: #F5E0DC !important;
   text-decoration: underline !important;
 }
 
@@ -100,7 +73,7 @@ a:hover {
 
 /* Joplin icon in Joplin link */
 .resource-icon {
-  background-color: var(--ctp-mocha-rosewater) !important;
+  background-color: #F5E0DC !important;
 }
 
 /*********************************************************************************
@@ -108,10 +81,10 @@ a:hover {
 *********************************************************************************/
 
 pre, .hljs {
-  background-color: var(--ctp-mocha-mantle) !important;
+  background-color: #181825 !important;
   font-family: var(--font-mono) !important;
   padding: 10px !important;
-  color: var(--ctp-mocha-text) !important;
+  color: #CDD6F4 !important;
   font-size: 14px !important;
   overflow: scroll !important;
 }
@@ -121,7 +94,7 @@ pre, .hljs {
   background-color: transparent !important;
   border: 0 !important;
   font-family: var(--font-mono) !important;
-  color: var(--ctp-mocha-yellow) !important;
+  color: #F9E2AF !important;
   font-size: 14px !important;
 }
 
@@ -130,13 +103,13 @@ pre, .hljs {
 *********************************************************************************/
 
 blockquote {
-  background-color: var(--ctp-mocha-surface0) !important;
+  background-color: #313244 !important;
   padding: 10px !important;
   color: var(--light) !important;
   font-size: 14px !important;
   font-style: italic !important;
   border: 0 !important;
-  border-left: 5px solid var(--ctp-mocha-mantle) !important;
+  border-left: 5px solid #181825 !important;
 }
 
 /*********************************************************************************
@@ -144,15 +117,15 @@ blockquote {
 *********************************************************************************/
 
 th {
-  border: 1px solid var(--ctp-mocha-text) !important;
-  color: var(--ctp-mocha-text) !important;
-  border-bottom: 1px solid var(--ctp-mocha-text) !important;
+  border: 1px solid #CDD6F4 !important;
+  color: #CDD6F4 !important;
+  border-bottom: 1px solid #CDD6F4 !important;
 }
 
 td {
-  border: 1px solid var(--ctp-mocha-text) !important;
-  color: var(--ctp-mocha-text) !important;
-  border-bottom: 1px solid var(--ctp-mocha-text) !important;
+  border: 1px solid #CDD6F4 !important;
+  color: #CDD6F4 !important;
+  border-bottom: 1px solid #CDD6F4 !important;
 }
 
 /*********************************************************************************
@@ -160,18 +133,18 @@ td {
 *********************************************************************************/
 
 ::selection {
-	background-color: var(--ctp-mocha-lavender) !important;
-  color: var(--ctp-mocha-crust) !important;
+  background-color: #B4BEFE !important;
+  color: #11111B !important;
 }
 
 mark, mark strong {
-  background: var(--ctp-mocha-yellow) !important;
-  color: var(--ctp-mocha-crust) !important;
+  background: #F9E2AF !important;
+  color: #11111B !important;
 }
 
 /* Highlighted searched item */
 mark[data-markjs] {
-  background-color: var(--ctp-mocha-lavender) !important;
+  background-color: #B4BEFE !important;
 }
 
 /*********************************************************************************
@@ -189,8 +162,8 @@ mark[data-markjs] {
 /* Container for spoiler title */
 #spoiler-block-title {
   font-family: var(--font-face) !important;
-  color: var(--ctp-mocha-text) !important;
-  background-color: var(--ctp-mocha-mantle) !important;
+  color: #CDD6F4 !important;
+  background-color: #181825 !important;
   border-radius: 0px;
 }
 
@@ -198,17 +171,17 @@ mark[data-markjs] {
 #spoiler-block-body {
   font-family: var(--font-face) !important;
   color: var(--light) !important;
-  background-color: var(--ctp-mocha-mantle) !important;
+  background-color: #181825 !important;
   border-radius: 0px;
 }
 
 /* Styling of the spoiler block body */
 .summary-content {
-  background-color: var(--ctp-mocha-mantle) !important;
+  background-color: #181825 !important;
 }
 
 .summary-title:before {
-  color: var(--ctp-mocha-lavender) !important;
+  color: #B4BEFE !important;
 }
 
 /*********************************************************************************
@@ -226,22 +199,21 @@ mark[data-markjs] {
   p, ul, ol, li {
     color: var(--black) !important;
   }
-  
+
   strong {
     color: var(--black) !important;
   }
-
-th {
+  th {
   border: 1px solid var(--black) !important;
   color: var(--black) !important;
   border-bottom: 1px solid var(--black) !important;
-}
+  }
 
-td {
+  td {
   border: 1px solid var(--black) !important;
   color: var(--black) !important;
   border-bottom: 1px solid var(--black) !important;
-}
+  }
 
   h1 {
     border-bottom: 1px solid var(--black) !important;
@@ -260,7 +232,7 @@ td {
   }
 
   a {
-    color: var(--ctp-mocha-red) !important;
+    color: #F38BA8 !important;
     text-decoration: underline !important;
   }
 
@@ -269,8 +241,7 @@ td {
   background-color: #F8F8F8 !important;
   border: 0 !important;
   font-family: var(--font-mono) !important;
-  /* color: var(--ctp-mocha-yellow) !important; */
-  /* color: # !important; */
+  /* color: #F9E2AF !important; */
   font-size: 14px !important;
 }
 
@@ -278,7 +249,7 @@ pre, .hljs {
   background-color: #F8F8F8 !important;
   font-family: var(--font-mono) !important;
   padding: 10px !important;
-  color: var(--ctp-mocha-crust) !important;
+  color: #11111B !important;
   font-size: 14px !important;
   overflow: scroll !important;
 }
@@ -286,7 +257,7 @@ pre, .hljs {
 blockquote {
   background-color: #F8F8F8 !important;
   padding: 10px !important;
-  color: var(--ctp-mocha-crust) !important;
+  color: #11111B !important;
   font-size: 14px !important;
   font-style: italic !important;
   border: 0 !important;

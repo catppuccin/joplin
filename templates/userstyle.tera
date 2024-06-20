@@ -1,3 +1,11 @@
+---
+whiskers:
+  version: 2.4.0
+  matrix:
+    - flavor
+  filename: "src/{{ flavor.identifier }}/userstyle.css"
+  hex_format: "#{{R}}{{G}}{{B}}"
+---
 /* Style for rendered Markdown */
 :root {
   --white: #D9E0EE;
@@ -20,27 +28,27 @@
 }
 
 #rendered-md, body, th, td {
-  background-color: #24273A !important;
+  background-color: {{ base.hex }} !important;
   font-family: var(--font-face) !important;
 }
 
 p, ul, ol, li {
-  color: #CAD3F5 !important;
+  color: {{ text.hex }} !important;
 }
 
 strong {
-  color: #CAD3F5 !important;
+  color: {{ text.hex }} !important;
 }
 
 hr {
   border: none;
-  border-bottom: 1px solid #24273A !important;
+  border-bottom: 1px solid {{ base.hex }} !important;
   margin: 2.5em 0 !important;
 }
 
 /* Scrollbars */
 ::-webkit-scrollbar-thumb {
-  background-color: #24273A !important;
+  background-color: {{ base.hex }} !important;
   border-radius: var(--scroll-radius) !important;
 }
 
@@ -49,7 +57,7 @@ hr {
 *********************************************************************************/
 
 h1 {
-  border-bottom: 1px solid #24273A !important;
+  border-bottom: 1px solid {{ base.hex }} !important;
   font-weight: var(--bolder) !important;
 }
 
@@ -63,7 +71,7 @@ h2, h3, h4, h5, h6 {
 *********************************************************************************/
 
 a {
-  color: #F4DBD6 !important;
+  color: {{ rosewater.hex }} !important;
   text-decoration: underline !important;
 }
 
@@ -73,7 +81,7 @@ a:hover {
 
 /* Joplin icon in Joplin link */
 .resource-icon {
-  background-color: #F4DBD6 !important;
+  background-color: {{ rosewater.hex }} !important;
 }
 
 /*********************************************************************************
@@ -81,10 +89,10 @@ a:hover {
 *********************************************************************************/
 
 pre, .hljs {
-  background-color: #1E2030 !important;
+  background-color: {{ mantle.hex }} !important;
   font-family: var(--font-mono) !important;
   padding: 10px !important;
-  color: #CAD3F5 !important;
+  color: {{ text.hex }} !important;
   font-size: 14px !important;
   overflow: scroll !important;
 }
@@ -94,7 +102,7 @@ pre, .hljs {
   background-color: transparent !important;
   border: 0 !important;
   font-family: var(--font-mono) !important;
-  color: #EED49F !important;
+  color: {{ yellow.hex }} !important;
   font-size: 14px !important;
 }
 
@@ -103,13 +111,13 @@ pre, .hljs {
 *********************************************************************************/
 
 blockquote {
-  background-color: #363A4F !important;
+  background-color: {{ surface0.hex }} !important;
   padding: 10px !important;
   color: var(--light) !important;
   font-size: 14px !important;
   font-style: italic !important;
   border: 0 !important;
-  border-left: 5px solid #1E2030 !important;
+  border-left: 5px solid {{ mantle.hex }} !important;
 }
 
 /*********************************************************************************
@@ -117,15 +125,15 @@ blockquote {
 *********************************************************************************/
 
 th {
-  border: 1px solid #CAD3F5 !important;
-  color: #CAD3F5 !important;
-  border-bottom: 1px solid #CAD3F5 !important;
+  border: 1px solid {{ text.hex }} !important;
+  color: {{ text.hex }} !important;
+  border-bottom: 1px solid {{ text.hex }} !important;
 }
 
 td {
-  border: 1px solid #CAD3F5 !important;
-  color: #CAD3F5 !important;
-  border-bottom: 1px solid #CAD3F5 !important;
+  border: 1px solid {{ text.hex }} !important;
+  color: {{ text.hex }} !important;
+  border-bottom: 1px solid {{ text.hex }} !important;
 }
 
 /*********************************************************************************
@@ -133,18 +141,18 @@ td {
 *********************************************************************************/
 
 ::selection {
-  background-color: #B7BDF8 !important;
-  color: #181926 !important;
+  background-color: {{ lavender.hex }} !important;
+  color: {{ crust.hex }} !important;
 }
 
 mark, mark strong {
-  background: #EED49F !important;
-  color: #181926 !important;
+  background: {{ yellow.hex }} !important;
+  color: {{ crust.hex }} !important;
 }
 
 /* Highlighted searched item */
 mark[data-markjs] {
-  background-color: #B7BDF8 !important;
+  background-color: {{ lavender.hex }} !important;
 }
 
 /*********************************************************************************
@@ -162,8 +170,8 @@ mark[data-markjs] {
 /* Container for spoiler title */
 #spoiler-block-title {
   font-family: var(--font-face) !important;
-  color: #CAD3F5 !important;
-  background-color: #1E2030 !important;
+  color: {{ text.hex }} !important;
+  background-color: {{ mantle.hex }} !important;
   border-radius: 0px;
 }
 
@@ -171,17 +179,17 @@ mark[data-markjs] {
 #spoiler-block-body {
   font-family: var(--font-face) !important;
   color: var(--light) !important;
-  background-color: #1E2030 !important;
+  background-color: {{ mantle.hex }} !important;
   border-radius: 0px;
 }
 
 /* Styling of the spoiler block body */
 .summary-content {
-  background-color: #1E2030 !important;
+  background-color: {{ mantle.hex }} !important;
 }
 
 .summary-title:before {
-  color: #B7BDF8 !important;
+  color: {{ lavender.hex }} !important;
 }
 
 /*********************************************************************************
@@ -232,7 +240,7 @@ mark[data-markjs] {
   }
 
   a {
-    color: #ED8796 !important;
+    color: {{ red.hex }} !important;
     text-decoration: underline !important;
   }
 
@@ -241,7 +249,7 @@ mark[data-markjs] {
   background-color: #F8F8F8 !important;
   border: 0 !important;
   font-family: var(--font-mono) !important;
-  /* color: #EED49F !important; */
+  /* color: {{ yellow.hex }} !important; */
   font-size: 14px !important;
 }
 
@@ -249,7 +257,7 @@ pre, .hljs {
   background-color: #F8F8F8 !important;
   font-family: var(--font-mono) !important;
   padding: 10px !important;
-  color: #181926 !important;
+  color: {{ crust.hex }} !important;
   font-size: 14px !important;
   overflow: scroll !important;
 }
@@ -257,7 +265,7 @@ pre, .hljs {
 blockquote {
   background-color: #F8F8F8 !important;
   padding: 10px !important;
-  color: #181926 !important;
+  color: {{ crust.hex }} !important;
   font-size: 14px !important;
   font-style: italic !important;
   border: 0 !important;

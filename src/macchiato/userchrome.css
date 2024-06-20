@@ -2,79 +2,53 @@
 /* For styling the entire Joplin app (except the rendered Markdown, which is defined in `userstyle.css`) */
 
 :root {
-	--ctp-macchiato-rosewater: #f4dbd6;
-	--ctp-macchiato-flamingo: #f0c6c6;
-	--ctp-macchiato-pink: #f5bde6;
-	--ctp-macchiato-mauve: #c6a0f6;
-	--ctp-macchiato-red: #ed8796;
-	--ctp-macchiato-maroon: #ee99a0;
-	--ctp-macchiato-peach: #f5a97f;
-	--ctp-macchiato-yellow: #eed49f;
-	--ctp-macchiato-green: #a6da95;
-	--ctp-macchiato-teal: #8bd5ca;
-	--ctp-macchiato-sky: #91d7e3;
-	--ctp-macchiato-sapphire: #7dc4e4;
-	--ctp-macchiato-blue: #8aadf4;
-	--ctp-macchiato-lavender: #b7bdf8;
-	--ctp-macchiato-text: #c5cff5;
-	--ctp-macchiato-subtext1: #b3bce0;
-	--ctp-macchiato-subtext0: #a1aacb;
-	--ctp-macchiato-overlay2: #8f97b7;
-	--ctp-macchiato-overlay1: #7d84a2;
-	--ctp-macchiato-overlay0: #6c728d;
-	--ctp-macchiato-surface2: #5a5f78;
-	--ctp-macchiato-surface1: #484c64;
-	--ctp-macchiato-surface0: #363a4f;
-	--ctp-macchiato-base: #24273a;
-	--ctp-macchiato-mantle: #1e2030;
-	--ctp-macchiato-crust: #181926;
-	--font-face: "Noto Sans", Arial, Helvetica, sans-serif;
-	--font-mono: "Roboto Mono", Courier, monospace;
-	--font-size: 13px;
-	--icon-size: 16px;
+  --font-face: "Noto Sans", Arial, Helvetica, sans-serif;
+  --font-mono: "Roboto Mono", Courier, monospace;
+  --font-size: 13px;
+  --icon-size: 16px;
 
-	--regular: 400;
-	--bolder: 600;
+  --regular: 400;
+  --bolder: 600;
 
-	--scroll-radius: 3px;
+  --scroll-radius: 3px;
 
-	--opacity-0-8: 0.8;
+  --opacity-0-8: 0.8;
 }
 
 /* Font used by Joplin */
 * {
-	font-family: var(--font-face) !important;
+  font-family: var(--font-face) !important;
 }
 
 html, body {
-	background-color: var(--ctp-macchiato-base) !important;
-	font-size: var(--font-size) !important;
-	font-weight: var(--regular) !important;
-	color: var(--light) !important;
+  background-color: #24273A !important;
+  font-size: var(--font-size) !important;
+  font-weight: var(--regular) !important;
+  color: var(--light) !important;
 }
 .CodeMirror-selected {
-		/* background-color: var(--lighter-grey) !important; */
-		background: #6B6B6B !important;
+    /* background-color: var(--lighter-grey) !important; */
+    background: #6B6B6B !important;
 }
 .rli-root {
-	background-color: var(--ctp-macchiato-base) !important;
+  background-color: #24273A !important;
 }
 
 /* Icons */
 .fa, .far, .fas {
-	font-weight: 900 !important;
-	font-family: "Font Awesome 5 Free" !important;
-	font-size: var(--icon-size) !important;
+  font-weight: 900 !important;
+  font-family: "Font Awesome 5 Free" !important;
+  font-size: var(--icon-size) !important;
 }
 
 ::placeholder {
-	color: var(--ctp-macchiato-lavender) !important;
+  color: #B7BDF8 !important;
 }
 
 /* Scrollbars */
 ::-webkit-scrollbar-thumb {
-	background-color: var(--ctp-macchiato-surface0) !important;
-	border-radius: var(--scroll-radius) !important;
+  background-color: #363A4F !important;
+  border-radius: var(--scroll-radius) !important;
 }
 
 /*********************************************************************************
@@ -83,8 +57,8 @@ html, body {
 
 /* General panel style */
 .resizableLayoutItem > div {
-	min-width: 200px !important;
-	background-color: var(--ctp-macchiato-base) !important;
+  min-width: 200px !important;
+  background-color: #24273A !important;
 }
 
 /*********************************************************************************
@@ -92,101 +66,101 @@ html, body {
 *********************************************************************************/
 
 .sidebar {
-	background-color: var(--ctp-macchiato-crust) !important;
-	text-transform: uppercase;
-	font-weight: var(--bolder);
+  background-color: #181926 !important;
+  text-transform: uppercase;
+  font-weight: var(--bolder);
 }
 
 /* Hide "All notes" icon
  * Comment this next block if you want the "All notes" icon */
 i.icon-notes {
-	display: none !important;
+  display: none !important;
 }
 
 /* FOLDERS */
 
 /* "Add new notebook" button */
 .sidebar > div > div > button span {
-	color: var(--ctp-macchiato-lavender) !important;
+  color: #B7BDF8 !important;
 }
 
 .sidebar > div > div > button:hover {
-	opacity: var(--opacity-0-8);
+  opacity: var(--opacity-0-8);
 }
 .folders .list-item-container {
-		background-color: var(--ctp-macchiato-crust) !important;
+    background-color: #181926 !important;
 }
 .folders .list-item-container:hover {
-	background-color: var(--ctp-macchiato-overlay0) !important;
+  background-color: #6E738D !important;
 }
 
 .folders .list-item-container a {
-	text-transform: initial;
-	color: var(--ctp-macchiato-text) !important;
-	font-weight: var(--regular);
+  text-transform: initial;
+  color: #CAD3F5 !important;
+  font-weight: var(--regular);
 }
 
 .folders .list-item-container a:focus {
-	color: var(--ctp-macchiato-text) !important;
-	background-color: var(--ctp-macchiato-base) !important;
+  color: #CAD3F5 !important;
+  background-color: #24273A !important;
 }
 
 .folders .list-item-container a:hover {
-	color: var(--ctp-macchiato-text) !important;
+  color: #CAD3F5 !important;
 }
 
 /* TAGS */
 .tags .list-item-container {
-		display: inline-block;
-		line-height: 0 !important;
-		padding: 0 !important;
-		height: auto !important;
-		background-color: var(--ctp-macchiato-crust) !important;
+    display: inline-block;
+    line-height: 0 !important;
+    padding: 0 !important;
+    height: auto !important;
+    background-color: #181926 !important;
 }
 .tags .list-item-container:hover {
-	display: inline-block;
-	line-height: 0 !important;
-	padding: 0 !important;
-	height: auto !important;
-	background-color: var(--ctp-macchiato-overlay0) !important;
+  display: inline-block;
+  line-height: 0 !important;
+  padding: 0 !important;
+  height: auto !important;
+  background-color: #6E738D !important;
 }
 
 .tags .list-item-container a {
-	padding-left: 12px !important;
-	text-transform: initial;
-	color: var(--ctp-macchiato-text) !important;
-	font-weight: var(--regular);
+  padding-left: 12px !important;
+  text-transform: initial;
+  color: #CAD3F5 !important;
+  font-weight: var(--regular);
 }
 
 .tags .list-item-container a:focus {
-	color: var(--ctp-macchiato-text) !important;
-	background-color: var(--ctp-macchiato-base) !important;
+  color: #CAD3F5 !important;
+  background-color: #24273A !important;
 }
 
 .tags .list-item-container a:hover {
-	color: var(--ctp-macchiato-text) !important;
-	background-color: var(--ctp-macchiato-overlay0) !important;
+  color: #CAD3F5 !important;
+  background-color: #6E738D !important;
 }
 
 /* SYNCHRONIZATION */
 
 .sidebar > div:last-of-type {
-	background-color: none !important;
+  background-color: none !important;
 }
 
 .sidebar > div:last-of-type > button {
-	background-color: var(--ctp-macchiato-lavender) !important;
-	border: 0px !important;
-	text-transform: uppercase;
-	font-size: var(--font-size) !important;
+  background-color: #B7BDF8 !important;
+  border: 0px !important;
+  text-transform: uppercase;
+  font-size: var(--font-size) !important;
 }
 
 .sidebar > div:last-of-type > button:hover {
-	opacity: var(--opacity-0-8);
+  opacity: var(--opacity-0-8);
 }
 
 .sidebar > div:last-of-type > button > span {
-	color: var(--ctp-macchiato-crust) !important;
+  color: #181926 !important;
 }
 
 /*********************************************************************************
@@ -194,111 +168,111 @@ i.icon-notes {
 *********************************************************************************/
 
 .note-list {
-	background-color: var(--ctp-macchiato-mantle) !important;
-	border: none !important;
+  background-color: #1E2030 !important;
+  border: none !important;
 }
 
 /* Empty notelist */
 .cLdGCO, .cLdGCO > div {
-	background-color: var(--ctp-macchiato-mantle) !important;
+  background-color: #1E2030 !important;
 }
 
 /* Remove border - introduced in 1.3.7 */
 .rli-noteList div {
-	border: none !important;
+  border: none !important;
 }
 
 /* BUTTONS SEARCH, SORT NOTES, NEW NOTE AND NEW TASK */
 
 div[height="50"] {
-	background-color: var(--ctp-macchiato-mantle) !important;
+  background-color: #1E2030 !important;
 }
 
 div[height="50"] input {
-	border: none !important;
-	color: var(--ctp-macchiato-text) !important;
-	background-color: var(--ctp-macchiato-mantle) !important;
+  border: none !important;
+  color: #CAD3F5 !important;
+  background-color: #1E2030 !important;
 }
 
 div[height="50"] button {
-	background: transparent !important;
-	color: var(--ctp-macchiato-text) !important;
-	border: 0 !important;
+  background: transparent !important;
+  color: #CAD3F5 !important;
+  border: 0 !important;
 }
 
 div[height="50"] button:hover {
-	opacity: var(--opacity-0-8);
+  opacity: var(--opacity-0-8);
 }
 
 div[height="50"] button span {
-	color: var(--ctp-macchiato-text) !important;
+  color: #CAD3F5 !important;
 }
 
-.sc-hCPjZK.fJjcQe {
-	background-color: var(--ctp-macchiato-mantle) !important;
+.sc-hCPjZK.fJjcQe{
+  background-color: #1E2030 !important;
 }
 .new-note-todo-buttons > button {
-	background-color: var(--ctp-macchiato-lavender) !important;
-	border: none !important;
+  background-color: #B7BDF8 !important;
+  border: none !important;
 }
 .new-todo-button > span {
-	color: var(--ctp-macchiato-crust) !important;
+  color: #181926 !important;
 }
 
 .search-bar {
-	background-color: var(--ctp-macchiato-crust) !important;
+  background-color: #181926 !important;
 }
 
 .icon-search {
-	color: var(--ctp-macchiato-lavender) !important;
+  color: #B7BDF8 !important;
 }
 
 .sort-order-reverse-button {
-	background-color: var(--ctp-macchiato-crust) !important;
+  background-color: #181926 !important;
 }
 .sort-order-reverse-button {
-	background-color: var(--ctp-macchiato-crust) !important;
+  background-color: #181926 !important;
 }
 
 .fa-calendar-alt {
-	color: var(--ctp-macchiato-lavender) !important;
+  color: #B7BDF8 !important;
 }
 .fa-long-arrow-alt-up {
-	color: var(--ctp-macchiato-lavender) !important;
+  color: #B7BDF8 !important;
 }
 /* LIST OF NOTES */
 
 .note-list .list-item-container {
-	background-color: var(--ctp-macchiato-mantle) !important;
+  background-color: #1E2030 !important;
 }
 
 .note-list .list-item-container:hover {
-	background-color: var(--ctp-macchiato-overlay1) !important;
+  background-color: #8087A2 !important;
 }
 
 .item-list.note-list .list-item-container::before {
-	border: none !important;
+  border: none !important;
 }
 
 .note-list .list-item-container a {
-	text-transform: initial;
-	color: var(--ctp-macchiato-text) !important;
-	font-weight: var(--regular);
+  text-transform: initial;
+  color: #CAD3F5 !important;
+  font-weight: var(--regular);
 }
 
 .note-list .list-item-container a:focus {
-	color: var(--ctp-macchiato-text) !important;
-	background-color: var(--ctp-macchiato-base) !important;
+  color: #CAD3F5 !important;
+  background-color: #24273A !important;
 }
 
 .note-list .list-item-container a:hover {
-	color: var(--ctp-macchiato-text) !important;
+  color: #CAD3F5 !important;
 }
 
 /* Add "..." to notes with long titles */
 .item-list.note-list .list-item-container > a > span {
-	overflow: hidden;
-	text-overflow: ellipsis;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /*********************************************************************************
@@ -310,21 +284,21 @@ div[height="50"] button span {
 /* Title */
 /* Changes frequently with updates, need to keep tabs */
 .rli-editor .cCOtNv > input {
-	padding-top: 5px;
-	background-color: var(--ctp-macchiato-base) !important;
+  padding-top: 5px;
+  background-color: #24273A !important;
 }
 
 .title-input {
-  background-color: var(--ctp-macchiato-base) !important;
-  color: var(--ctp-macchiato-text) !important;
+  background-color: #24273A !important;
+  color: #CAD3F5 !important;
 }
 
 .editor-toolbar {
-	background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 .editor-toolbar > div > a:hover {
-	opacity: var(--opacity-0-8);
+  opacity: var(--opacity-0-8);
 }
 
 /* Hide "Spell checker" button */
@@ -339,63 +313,64 @@ div[height="50"] button span {
 
 /* Hide the Toggle editors button */
 .editor-toolbar button[title="Toggle editors"] {
-	display: none !important;
+  display: none !important;
 }
 
 /* Breadcrumbs (In:...) - Used in tag listings */
 .cJOYJm {
-	background-color: var(--ctp-macchiato-lavender) !important;
-	margin: 0px !important;
-	padding: 5px !important;
-	font-size: var(--font-size) !important;
+  background-color: #B7BDF8 !important;
+  margin: 0px !important;
+  padding: 5px !important;
+  font-size: var(--font-size) !important;
 }
 
 .cJOYJm:hover {
-	opacity: var(--opacity-0-8);
+  opacity: var(--opacity-0-8);
 }
 
 /* CONTENT */
 /* Empty notebook */
 .rli-editor > div > div:empty {
-	background-color: var(--ctp-macchiato-base) !important;
+  background-color: #24273A !important;
 }
 
 /* Editor layout splitter */
 .rli-editor > div > div > div > div > div > div > div:last-of-type {
-	border-color: var(--ctp-macchiato-base) !important;
+  border-color: #24273A !important;
 }
+
 div.sc-AxirZ.hagDvo, div.sc-AxirZ.hagDvo > div {
-	background-color: var(--ctp-macchiato-mantle) !important;
-	color: var(--ctp-macchiato-text) !important;
+  background-color: #1E2030 !important;
+  color: #CAD3F5 !important;
 }
 
 /* NOTE SEARCH BAR */
 .note-search-bar, .note-search-bar > div > div {
-	background-color: var(--ctp-macchiato-base) !important;
-	width: 100%;
-	border: 0 !important;
+  background-color: #24273A !important;
+  width: 100%;
+  border: 0 !important;
 }
 
 .note-search-bar input {
-	border: 0 !important;
-	padding: 5px;
-	color: var(--ctp-macchiato-text) !important;
-	background-color: var(--ctp-macchiato-base) !important;
+  border: 0 !important;
+  padding: 5px;
+  color: #CAD3F5 !important;
+  background-color: #24273A !important;
 }
 
 /* TAGS */
 .tag-bar {
-	background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 .tag-list > span {
-	color: var(--ctp-macchiato-lavender) !important;
-	background-color: var(--ctp-macchiato-crust) !important;
+  color: #B7BDF8 !important;
+  background-color: #181926 !important;
 }
 
 /* Hide "Click to add tags..."*/
 a[Title="Tags"] + div > span {
-	display: none !important;
+  display: none !important;
 }
 
 /*********************************************************************************
@@ -403,128 +378,128 @@ a[Title="Tags"] + div > span {
 *********************************************************************************/
 
 .cm-s-material-darker.CodeMirror {
-	background-color: var(--ctp-macchiato-base) !important;
-	color: var(--ctp-macchiato-text) !important;
+  background-color: #24273A !important;
+  color: #CAD3F5 !important;
 }
 
 /* Header */
 .cm-header {
-	color: var(--ctp-macchiato-lavender) !important;
+  color: #B7BDF8 !important;
 }
 
 /* Italics/Emphasis, Bold, BoldItalics */
 .cm-em, .cm-strong, .cm-strong.cm-em {
-	color: var(--ctp-macchiato-text) !important;
+  color: #CAD3F5 !important;
 }
 
 /* Lists (Bullet/number/todo) */
 .cm-variable-2, .cm-variable-3, .cm-keyword {
-	color: var(--ctp-macchiato-text) !important;
+  color: #CAD3F5 !important;
 }
 
 .cm-s-material-darker .cm-variable-2.cm-rm-list-token {
-	color: var(--ctp-macchiato-text) !important;
+  color: #CAD3F5 !important;
 }
 
 /* Links (link) */
 .cm-url {
-	color: var(--ctp-macchiato-rosewater) !important;
-	opacity: 1;
-	text-decoration: underline;
+  color: #F4DBD6 !important;
+  opacity: 1;
+  text-decoration: underline;
 }
 
 /* Links (text) */
 .cm-link-text {
-	color: var(--ctp-macchiato-rosewater) !important;
+  color: #F4DBD6 !important;
 }
 pre.CodeMirror-line {
-		color: var(--ctp-macchiato-text) !important;
-		background-color: none !important;
+    color: #CAD3F5 !important;
+    background-color: none !important;
 }
 /* Image link in editor */
 span.cm-string.cm-url.cm-overlay.cm-rm-link.cm-overlay.cm-rm-image {
-	color: var(--ctp-macchiato-lavender) !important;
+  color: #B7BDF8 !important;
 }
 /* Comment outside code block */
 pre.CodeMirror-line span.cm-comment {
-	color: var(--ctp-macchiato-overlay1) !important;
-	background-color: none !important;
-	border: 0 !important;
+  color: #8087A2 !important;
+  background-color: none !important;
+  border: 0 !important;
 }
 
 /* Codeblock selection colour */
 /* For some reason, the CodeMirror selection does not pick the colour correctly, left for now. */
 pre.CodeMirror-line span.CodeMirror-selectedtext {
-	/* background: var(--ctp-macchiato-surface2) !important; */
-	background: #6B6B6B !important;
+  /* background: #5B6078 !important; */
+  background: #6B6B6B !important;
 }
 
 div[class^="cm-jn-code-block-background "]::selection {
-	background-color: var(--ctp-macchiato-base) !important;
-	border-color: var(--ctp-macchiato-base) !important;
+  background-color: #24273A !important;
+  border-color: #24273A !important;
 }
 
 pre.cm-jn-code-block.CodeMirror-line span.cm-comment.cm-jn-monospace.CodeMirror-selectedtext {
-	/* background: var(--ctp-macchiato-surface2) !important; */
-	background: #6B6B6B !important;
+  /* background: #5B6078 !important; */
+  background: #6B6B6B !important;
 }
 pre.cm-jn-code-block.CodeMirror-line::selection {
-	/* background: var(--ctp-macchiato-surface2) !important; */
-	background: #6B6B6B !important;
+  /* background: #5B6078 !important; */
+  background: #6B6B6B !important;
 }
 div.cm-jn-code-block-background.CodeMirror-linebackground::selection {
-	/* background: var(--ctp-macchiato-surface2) !important; */
-	background: #6B6B6B !important;
+  /* background: #5B6078 !important; */
+  background: #6B6B6B !important;
 }
 pre.cm-jn-code-block.CodeMirror-line::selection span {
-	/* background: var(--ctp-macchiato-surface2) !important; */
-	background: #6B6B6B !important;
+  /* background: #5B6078 !important; */
+  background: #6B6B6B !important;
 }
 
 div.CodeMirror span.cm-comment.cm-jn-inline-code {
-	background-color: transparent !important;
-	padding-right: 0 !important;
-	padding-left: 0 !important;
+  background-color: transparent !important;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
 /* Code Block Text */
 div.CodeMirror span.cm-comment:not(.cm-jn-inline-code) {
-	color: var(--ctp-macchiato-text) !important;
-	background-color: transparent !important;
+  color: #CAD3F5 !important;
+  background-color: transparent !important;
 }
 
 /* Code block background */
 div.CodeMirror div.cm-jn-code-block-background {
-		background-color: var(--ctp-macchiato-mantle) !important;
+    background-color: #1E2030 !important;
 }
 
 /* Horizontal Line */
 .cm-hr {
-	color: var(--ctp-macchiato-overlay0) !important;
+  color: #6E738D !important;
 }
 
 /* Cursor colour */
 .CodeMirror-cursor {
-		border-left: 1px solid var(--ctp-macchiato-rosewater) !important;
-		border-right: none !important;
-		width: 0 !important;
+    border-left: 1px solid #F4DBD6 !important;
+    border-right: none !important;
+    width: 0 !important;
 }
 .cm-fat-cursor div.CodeMirror-cursor {
-		width: 10px !important;
-		border: 0 !important;
-		background: var(--ctp-macchiato-rosewater) !important;
+    width: 10px !important;
+    border: 0 !important;
+    background: #F4DBD6 !important;
 }
 .cm-fat-cursor div.CodeMirror-cursors {
-		z-index: 1 !important;
+    z-index: 1 !important;
 }
 .cm-fat-cursor-mark {
-		background-color: rgba(150, 205, 251, 0.5) !important;
+    background-color: rgba(125, 196, 228, 0.50) !important;
 }
 
 .cm-animate-fat-cursor {
-		width: auto !important;
-		border: 0;
-		background-color: var(--ctp-macchiato-rosewater) !important;
+    width: auto !important;
+    border: 0;
+    background-color: #F4DBD6 !important;
 }
 
 /* Rich Markdown Extra CSS Classes
@@ -532,42 +507,42 @@ Please opt in "Add additional CSS classes for enhanced customization" in plugin
 settings, see https://github.com/CalebJohn/joplin-rich-markdown#extra-css */
 
 .cm-header.cm-rm-header-token {
-	color: var(--ctp-macchiato-green) !important;
+  color: #A6DA95 !important;
 }
 
 .cm-strong.cm-rm-strong-token {
-	color: var(--ctp-macchiato-blue) !important;
+  color: #8AADF4 !important;
 }
 
 pre.cm-rm-blockquote.CodeMirror-line {
-	font-style: italic !important;
+  font-style: italic !important;
 }
 
 /* Command palette coloring */
 
 div.modal-dialog {
-	background-color: var(--ctp-macchiato-mantle) !important;
+  background-color: #1E2030 !important;
 }
 
 .modal-dialog > div > input {
-	background-color: var(--ctp-macchiato-crust) !important;
-	color: var(--ctp-macchiato-text) !important;
+  background-color: #181926 !important;
+  color: #CAD3F5 !important;
 }
 
 .modal-dialog > .item-list {
-	background-color: var(--ctp-macchiato-crust) !important;
-	color: var(--ctp-macchiato-text) !important;
+  background-color: #181926 !important;
+  color: #CAD3F5 !important;
 
 }
 
 .modal-dialog > .item-list div[class="selected"] {
-	background-color: var(--ctp-macchiato-surface2) !important;
+  background-color: #5B6078 !important;
 }
 
 .modal-dialog > .item-list div[class="selected"] > div {
-	color: var(--ctp-macchiato-text) !important;
+  color: #CAD3F5 !important;
 }
 
 .modal-dialog > .item-list > * {
-	color: var(--ctp-macchiato-text) !important;
+  color: #CAD3F5 !important;
 }
