@@ -1,38 +1,12 @@
 /* Style for rendered Markdown */
 :root {
-  --ctp-frappe-rosewater: #f2d5cf;
-	--ctp-frappe-flamingo: #eebebe;
-	--ctp-frappe-pink: #f4b8e4;
-	--ctp-frappe-mauve: #ca9ee6;
-	--ctp-frappe-red: #e78284;
-	--ctp-frappe-maroon: #ea999c;
-	--ctp-frappe-peach: #ef9f76;
-	--ctp-frappe-yellow: #e5c890;
-	--ctp-frappe-green: #a6d189;
-	--ctp-frappe-teal: #81c8be;
-	--ctp-frappe-sky: #99d1db;
-	--ctp-frappe-sapphire: #85c1dc;
-	--ctp-frappe-blue: #8caaee;
-	--ctp-frappe-lavender: #babbf1;
-	--ctp-frappe-text: #c6ceef;
-	--ctp-frappe-subtext1: #b5bddc;
-	--ctp-frappe-subtext0: #a5acc9;
-	--ctp-frappe-overlay2: #949bb7;
-	--ctp-frappe-overlay1: #838aa4;
-	--ctp-frappe-overlay0: #737891;
-	--ctp-frappe-surface2: #62677e;
-	--ctp-frappe-surface1: #51566c;
-	--ctp-frappe-surface0: #414559;
-	--ctp-frappe-base: #303446;
-	--ctp-frappe-mantle: #292c3c;
-	--ctp-frappe-crust: #232634;
   --white: #D9E0EE;
   --black: #000000;
   --light: #C9CFFF;
   --lighter-grey: #C3BAC6;
   --light-grey: #988BA2;
 
-	--font-face: "Noto Sans", Arial, Helvetica, sans-serif;
+  --font-face: "Noto Sans", Arial, Helvetica, sans-serif;
   --font-mono: "Roboto Mono", Courier, monospace;
   --font-size: 13px;
   --icon-size: 16px;
@@ -45,29 +19,28 @@
   --opacity-0-8: 0.8;
 }
 
-
 #rendered-md, body, th, td {
-  background-color: var(--ctp-frappe-base) !important;
+  background-color: #303446 !important;
   font-family: var(--font-face) !important;
 }
 
 p, ul, ol, li {
-  color: var(--ctp-frappe-text) !important;
+  color: #C6D0F5 !important;
 }
 
 strong {
-  color: var(--ctp-frappe-text) !important;
+  color: #C6D0F5 !important;
 }
 
 hr {
   border: none;
-  border-bottom: 1px solid var(--ctp-frappe-base) !important;
+  border-bottom: 1px solid #303446 !important;
   margin: 2.5em 0 !important;
 }
 
 /* Scrollbars */
 ::-webkit-scrollbar-thumb {
-  background-color: var(--ctp-frappe-base) !important;
+  background-color: #303446 !important;
   border-radius: var(--scroll-radius) !important;
 }
 
@@ -76,7 +49,7 @@ hr {
 *********************************************************************************/
 
 h1 {
-  border-bottom: 1px solid var(--ctp-frappe-base) !important;
+  border-bottom: 1px solid #303446 !important;
   font-weight: var(--bolder) !important;
 }
 
@@ -90,7 +63,7 @@ h2, h3, h4, h5, h6 {
 *********************************************************************************/
 
 a {
-  color: var(--ctp-frappe-rosewater) !important;
+  color: #F2D5CF !important;
   text-decoration: underline !important;
 }
 
@@ -100,7 +73,7 @@ a:hover {
 
 /* Joplin icon in Joplin link */
 .resource-icon {
-  background-color: var(--ctp-frappe-rosewater) !important;
+  background-color: #F2D5CF !important;
 }
 
 /*********************************************************************************
@@ -108,10 +81,10 @@ a:hover {
 *********************************************************************************/
 
 pre, .hljs {
-  background-color: var(--ctp-frappe-mantle) !important;
+  background-color: #292C3C !important;
   font-family: var(--font-mono) !important;
   padding: 10px !important;
-  color: var(--ctp-frappe-text) !important;
+  color: #C6D0F5 !important;
   font-size: 14px !important;
   overflow: scroll !important;
 }
@@ -121,7 +94,7 @@ pre, .hljs {
   background-color: transparent !important;
   border: 0 !important;
   font-family: var(--font-mono) !important;
-  color: var(--ctp-frappe-yellow) !important;
+  color: #E5C890 !important;
   font-size: 14px !important;
 }
 
@@ -130,13 +103,13 @@ pre, .hljs {
 *********************************************************************************/
 
 blockquote {
-  background-color: var(--ctp-frappe-surface0) !important;
+  background-color: #414559 !important;
   padding: 10px !important;
   color: var(--light) !important;
   font-size: 14px !important;
   font-style: italic !important;
   border: 0 !important;
-  border-left: 5px solid var(--ctp-frappe-mantle) !important;
+  border-left: 5px solid #292C3C !important;
 }
 
 /*********************************************************************************
@@ -144,15 +117,15 @@ blockquote {
 *********************************************************************************/
 
 th {
-  border: 1px solid var(--ctp-frappe-text) !important;
-  color: var(--ctp-frappe-text) !important;
-  border-bottom: 1px solid var(--ctp-frappe-text) !important;
+  border: 1px solid #C6D0F5 !important;
+  color: #C6D0F5 !important;
+  border-bottom: 1px solid #C6D0F5 !important;
 }
 
 td {
-  border: 1px solid var(--ctp-frappe-text) !important;
-  color: var(--ctp-frappe-text) !important;
-  border-bottom: 1px solid var(--ctp-frappe-text) !important;
+  border: 1px solid #C6D0F5 !important;
+  color: #C6D0F5 !important;
+  border-bottom: 1px solid #C6D0F5 !important;
 }
 
 /*********************************************************************************
@@ -160,18 +133,18 @@ td {
 *********************************************************************************/
 
 ::selection {
-	background-color: var(--ctp-frappe-lavender) !important;
-  color: var(--ctp-frappe-crust) !important;
+  background-color: #BABBF1 !important;
+  color: #232634 !important;
 }
 
 mark, mark strong {
-  background: var(--ctp-frappe-yellow) !important;
-  color: var(--ctp-frappe-crust) !important;
+  background: #E5C890 !important;
+  color: #232634 !important;
 }
 
 /* Highlighted searched item */
 mark[data-markjs] {
-  background-color: var(--ctp-frappe-lavender) !important;
+  background-color: #BABBF1 !important;
 }
 
 /*********************************************************************************
@@ -189,8 +162,8 @@ mark[data-markjs] {
 /* Container for spoiler title */
 #spoiler-block-title {
   font-family: var(--font-face) !important;
-  color: var(--ctp-frappe-text) !important;
-  background-color: var(--ctp-frappe-mantle) !important;
+  color: #C6D0F5 !important;
+  background-color: #292C3C !important;
   border-radius: 0px;
 }
 
@@ -198,17 +171,17 @@ mark[data-markjs] {
 #spoiler-block-body {
   font-family: var(--font-face) !important;
   color: var(--light) !important;
-  background-color: var(--ctp-frappe-mantle) !important;
+  background-color: #292C3C !important;
   border-radius: 0px;
 }
 
 /* Styling of the spoiler block body */
 .summary-content {
-  background-color: var(--ctp-frappe-mantle) !important;
+  background-color: #292C3C !important;
 }
 
 .summary-title:before {
-  color: var(--ctp-frappe-lavender) !important;
+  color: #BABBF1 !important;
 }
 
 /*********************************************************************************
@@ -259,7 +232,7 @@ mark[data-markjs] {
   }
 
   a {
-    color: var(--ctp-frappe-red) !important;
+    color: #E78284 !important;
     text-decoration: underline !important;
   }
 
@@ -268,7 +241,7 @@ mark[data-markjs] {
   background-color: #F8F8F8 !important;
   border: 0 !important;
   font-family: var(--font-mono) !important;
-  /* color: var(--ctp-frappe-yellow) !important; */
+  /* color: #E5C890 !important; */
   font-size: 14px !important;
 }
 
@@ -276,7 +249,7 @@ pre, .hljs {
   background-color: #F8F8F8 !important;
   font-family: var(--font-mono) !important;
   padding: 10px !important;
-  color: var(--ctp-frappe-crust) !important;
+  color: #232634 !important;
   font-size: 14px !important;
   overflow: scroll !important;
 }
@@ -284,7 +257,7 @@ pre, .hljs {
 blockquote {
   background-color: #F8F8F8 !important;
   padding: 10px !important;
-  color: var(--ctp-frappe-crust) !important;
+  color: #232634 !important;
   font-size: 14px !important;
   font-style: italic !important;
   border: 0 !important;

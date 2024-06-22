@@ -1,45 +1,17 @@
 /* Style for rendered Markdown */
-
 :root {
-  --ctp-latte-rosewater: #de9584;
-	--ctp-latte-flamingo: #dd7878;
-	--ctp-latte-pink: #ec83d0;
-	--ctp-latte-mauve: #8839ef;
-	--ctp-latte-red: #d20f39;
-	--ctp-latte-maroon: #e64553;
-	--ctp-latte-peach: #fe640b;
-	--ctp-latte-yellow: #e49320;
-	--ctp-latte-green: #40a02b;
-	--ctp-latte-teal: #179299;
-	--ctp-latte-sky: #04a5e5;
-	--ctp-latte-sapphire: #209fb5;
-	--ctp-latte-blue: #2a6ef5;
-	--ctp-latte-lavender: #7287fd;
-	--ctp-latte-text: #4c4f69;
-	--ctp-latte-subtext1: #5c5f77;
-	--ctp-latte-subtext0: #6c6f85;
-	--ctp-latte-overlay2: #7c7f93;
-	--ctp-latte-overlay1: #8c8fa1;
-	--ctp-latte-overlay0: #9ca0b0;
-	--ctp-latte-surface2: #acb0be;
-	--ctp-latte-surface1: #bcc0cc;
-	--ctp-latte-surface0: #ccd0da;
-	--ctp-latte-base: #eff1f5;
-	--ctp-latte-mantle: #e6e9ef;
-	--ctp-latte-crust: #dce0e8;
- --white: #D9E0EE;
+  --white: #D9E0EE;
   --black: #000000;
   --light: #C9CFFF;
   --lighter-grey: #C3BAC6;
   --light-grey: #988BA2;
 
-	--font-face: "Noto Sans", Arial, Helvetica, sans-serif;
+  --font-face: "Noto Sans", Arial, Helvetica, sans-serif;
   --font-mono: "Roboto Mono", Courier, monospace;
   --font-size: 13px;
   --icon-size: 16px;
 
   --regular: 400;
-  --bolder: 500;
   --bolder: 600;
 
   --scroll-radius: 3px;
@@ -48,27 +20,27 @@
 }
 
 #rendered-md, body, th, td {
-  background-color: var(--ctp-latte-base) !important;
+  background-color: #EFF1F5 !important;
   font-family: var(--font-face) !important;
 }
 
 p, ul, ol, li {
-  color: var(--ctp-latte-text) !important;
+  color: #4C4F69 !important;
 }
 
 strong {
-  color: var(--ctp-latte-text) !important;
+  color: #4C4F69 !important;
 }
 
 hr {
   border: none;
-  border-bottom: 1px solid var(--ctp-latte-base) !important;
+  border-bottom: 1px solid #EFF1F5 !important;
   margin: 2.5em 0 !important;
 }
 
 /* Scrollbars */
 ::-webkit-scrollbar-thumb {
-  background-color: var(--ctp-latte-base) !important;
+  background-color: #EFF1F5 !important;
   border-radius: var(--scroll-radius) !important;
 }
 
@@ -77,15 +49,13 @@ hr {
 *********************************************************************************/
 
 h1 {
-  color: var(--ctp-latte-text) !important;
-  border-bottom: 1px solid var(--ctp-latte-base) !important;
+  border-bottom: 1px solid #EFF1F5 !important;
   font-weight: var(--bolder) !important;
 }
 
 h2, h3, h4, h5, h6 {
-  color: var(--ctp-latte-text) !important;
   border-bottom: 0 !important;
-  font-weight: var(--bold) !important;
+  font-weight: var(--regular) !important;
 }
 
 /*********************************************************************************
@@ -93,7 +63,7 @@ h2, h3, h4, h5, h6 {
 *********************************************************************************/
 
 a {
-  color: var(--ctp-latte-rosewater) !important;
+  color: #DC8A78 !important;
   text-decoration: underline !important;
 }
 
@@ -103,7 +73,7 @@ a:hover {
 
 /* Joplin icon in Joplin link */
 .resource-icon {
-  background-color: var(--ctp-latte-rosewater) !important;
+  background-color: #DC8A78 !important;
 }
 
 /*********************************************************************************
@@ -111,10 +81,10 @@ a:hover {
 *********************************************************************************/
 
 pre, .hljs {
-  background-color: var(--ctp-latte-mantle) !important;
+  background-color: #E6E9EF !important;
   font-family: var(--font-mono) !important;
   padding: 10px !important;
-  color: var(--ctp-latte-text) !important;
+  color: #4C4F69 !important;
   font-size: 14px !important;
   overflow: scroll !important;
 }
@@ -124,17 +94,8 @@ pre, .hljs {
   background-color: transparent !important;
   border: 0 !important;
   font-family: var(--font-mono) !important;
-  color: var(--ctp-latte-blue) !important;
+  color: #DF8E1D !important;
   font-size: 14px !important;
-}
-pre, .hljs-params {
-	color: var(--ctp-latte-red) !important;
-}
-pre, .hljs-string {
-	color: var(--ctp-latte-blue	) !important;
-}
-pre, .hljs-built_in {
-	color: var(--ctp-latte-yellow) !important;
 }
 
 /*********************************************************************************
@@ -142,28 +103,29 @@ pre, .hljs-built_in {
 *********************************************************************************/
 
 blockquote {
-  background-color: var(--ctp-latte-surface0) !important;
+  background-color: #CCD0DA !important;
   padding: 10px !important;
   color: var(--light) !important;
   font-size: 14px !important;
   font-style: italic !important;
   border: 0 !important;
-  border-left: 5px solid var(--ctp-latte-mantle) !important;
+  border-left: 5px solid #E6E9EF !important;
 }
 
 /*********************************************************************************
 * TABLES
 *********************************************************************************/
+
 th {
-  border: 1px solid var(--ctp-latte-text) !important;
-  color: var(--ctp-latte-text) !important;
-  border-bottom: 1px solid var(--ctp-latte-text) !important;
+  border: 1px solid #4C4F69 !important;
+  color: #4C4F69 !important;
+  border-bottom: 1px solid #4C4F69 !important;
 }
 
 td {
-  border: 1px solid var(--ctp-latte-text) important;
-  color: var(--ctp-latte-text) !important;
-  border-bottom: 1px solid var(--ctp-latte-text) !important;
+  border: 1px solid #4C4F69 !important;
+  color: #4C4F69 !important;
+  border-bottom: 1px solid #4C4F69 !important;
 }
 
 /*********************************************************************************
@@ -171,18 +133,18 @@ td {
 *********************************************************************************/
 
 ::selection {
-	background-color: var(--ctp-latte-lavender) !important;
-  color: var(--ctp-latte-crust) !important;
+  background-color: #7287FD !important;
+  color: #DCE0E8 !important;
 }
 
 mark, mark strong {
-  background: var(--ctp-latte-yellow) !important;
-  color: var(--ctp-latte-crust) !important;
+  background: #DF8E1D !important;
+  color: #DCE0E8 !important;
 }
 
 /* Highlighted searched item */
 mark[data-markjs] {
-  background-color: var(--ctp-latte-lavender) !important;
+  background-color: #7287FD !important;
 }
 
 /*********************************************************************************
@@ -200,8 +162,8 @@ mark[data-markjs] {
 /* Container for spoiler title */
 #spoiler-block-title {
   font-family: var(--font-face) !important;
-  color: var(--ctp-latte-text) !important;
-  background-color: var(--ctp-latte-mantle) !important;
+  color: #4C4F69 !important;
+  background-color: #E6E9EF !important;
   border-radius: 0px;
 }
 
@@ -209,17 +171,17 @@ mark[data-markjs] {
 #spoiler-block-body {
   font-family: var(--font-face) !important;
   color: var(--light) !important;
-  background-color: var(--ctp-latte-mantle) !important;
+  background-color: #E6E9EF !important;
   border-radius: 0px;
 }
 
 /* Styling of the spoiler block body */
 .summary-content {
-  background-color: var(--ctp-latte-mantle) !important;
+  background-color: #E6E9EF !important;
 }
 
 .summary-title:before {
-  color: var(--ctp-latte-lavender) !important;
+  color: #7287FD !important;
 }
 
 /*********************************************************************************
@@ -241,7 +203,6 @@ mark[data-markjs] {
   strong {
     color: var(--black) !important;
   }
-
   th {
   border: 1px solid var(--black) !important;
   color: var(--black) !important;
@@ -271,7 +232,7 @@ mark[data-markjs] {
   }
 
   a {
-    color: var(--ctp-latte-red) !important;
+    color: #D20F39 !important;
     text-decoration: underline !important;
   }
 
@@ -280,23 +241,23 @@ mark[data-markjs] {
   background-color: #F8F8F8 !important;
   border: 0 !important;
   font-family: var(--font-mono) !important;
-  /* color: var(--ctp-latte-yellow) !important; */
+  /* color: #DF8E1D !important; */
   font-size: 14px !important;
 }
 
 pre, .hljs {
-  background-color: #F8F8F8!important;
+  background-color: #F8F8F8 !important;
   font-family: var(--font-mono) !important;
   padding: 10px !important;
-  color: var(--ctp-latte-crust) !important;
+  color: #DCE0E8 !important;
   font-size: 14px !important;
   overflow: scroll !important;
 }
 
 blockquote {
-  background-color: #F8F8F8!important;
+  background-color: #F8F8F8 !important;
   padding: 10px !important;
-  color: var(--ctp-latte-crust) !important;
+  color: #DCE0E8 !important;
   font-size: 14px !important;
   font-style: italic !important;
   border: 0 !important;
