@@ -65,7 +65,6 @@ html, body {
 
 /* General panel style */
 .resizableLayoutItem > div {
-  min-width: 200px !important;
   background-color: {{ base.hex }} !important;
 }
 
