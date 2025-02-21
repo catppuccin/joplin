@@ -410,6 +410,11 @@ a[Title="Tags"] + div > span {
   color: var(--ctp-mocha-lavender) !important;
 }
 
+/* Markdown editor */
+.cm-editor{
+    background-color: var(--ctp-mocha-base) !important
+}
+
 /* Italics/Emphasis, Bold, BoldItalics */
 .cm-em, .cm-strong, .cm-strong.cm-em {
   color: var(--ctp-mocha-text) !important;

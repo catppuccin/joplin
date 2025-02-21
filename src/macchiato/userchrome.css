@@ -411,6 +411,11 @@ a[Title="Tags"] + div > span {
 	color: var(--ctp-macchiato-lavender) !important;
 }
 
+/* Markdown editor */
+.cm-editor{
+    background-color: var(--ctp-macchiato-base) !important
+}
+
 /* Italics/Emphasis, Bold, BoldItalics */
 .cm-em, .cm-strong, .cm-strong.cm-em {
 	color: var(--ctp-macchiato-text) !important;
