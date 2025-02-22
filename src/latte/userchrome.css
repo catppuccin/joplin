@@ -260,7 +260,7 @@ div[height="50"] button span {
   background-color: var(--ctp-latte-mantle) !important;
 }
 
-.sc-hCPjZK.fJjcQe {
+.sc-dtInlm.dUXxSp {
   background-color: var(--ctp-latte-mantle) !important;
 }
 .new-note-todo-buttons > button {
@@ -303,7 +303,15 @@ div[height="50"] button span {
   background-color: var(--ctp-latte-overlay1) !important;
 }
 
+.note-list-item:hover {
+  background-color: var(--ctp-latte-overlay0) !important;
+}
+
 .item-list.note-list .list-item-container::before {
+  border: none !important;
+}
+
+.note-list-item::before{
   border: none !important;
 }
 
@@ -318,8 +326,20 @@ div[height="50"] button span {
   background-color: var(--ctp-latte-base) !important;
 }
 
+.list-item-wrapper.-selected {
+  background-color: var(--ctp-latte-base) !important;
+}
+
+.note-list-item > .content.-selected {
+  background-color: var(--ctp-latte-surface2) !important;
+}
+
 .note-list .list-item-container a:hover {
   color: var(--ctp-latte-text) !important;
+}
+
+.list-item-wrapper.-highlight-on-hover:hover {
+  background-color: var(--ctp-latte-surface1);
 }
 
 /* Add "..." to notes with long titles */

@@ -233,8 +233,8 @@ div[height="50"] button span {
 	color: var(--ctp-macchiato-text) !important;
 }
 
-.sc-hCPjZK.fJjcQe {
-	background-color: var(--ctp-macchiato-mantle) !important;
+.sc-dtInlm.dUXxSp {
+  background-color: var(--ctp-macchiato-mantle) !important;
 }
 .new-note-todo-buttons > button {
 	background-color: var(--ctp-macchiato-lavender) !important;
@@ -275,8 +275,16 @@ div[height="50"] button span {
 	background-color: var(--ctp-macchiato-overlay1) !important;
 }
 
+.note-list-item:hover {
+  background-color: var(--ctp-macchiato-overlay0) !important;
+}
+
 .item-list.note-list .list-item-container::before {
 	border: none !important;
+}
+
+.note-list-item::before{
+  border: none !important;
 }
 
 .note-list .list-item-container a {
@@ -290,8 +298,20 @@ div[height="50"] button span {
 	background-color: var(--ctp-macchiato-base) !important;
 }
 
+.list-item-wrapper.-selected {
+  background-color: var(--ctp-macchiato-base) !important;
+}
+
+.note-list-item > .content.-selected {
+  background-color: var(--ctp-macchiato-surface2) !important;
+}
+
 .note-list .list-item-container a:hover {
 	color: var(--ctp-macchiato-text) !important;
+}
+
+.list-item-wrapper.-highlight-on-hover:hover {
+  background-color: var(--ctp-macchiato-surface1);
 }
 
 /* Add "..." to notes with long titles */
