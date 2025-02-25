@@ -56,7 +56,7 @@ strong {
 
 hr {
   border: none;
-  border-bottom: 1px solid var(--ctp-macchiato-base) !important;
+  border-bottom: 1px solid var(--ctp-macchiato-overlay1) !important;
   margin: 2.5em 0 !important;
 }
 
@@ -71,11 +71,13 @@ hr {
 *********************************************************************************/
 
 h1 {
+  color: var(--ctp-macchiato-text) !important;
   border-bottom: 1px solid var(--ctp-macchiato-base) !important;
   font-weight: var(--bolder) !important;
 }
 
 h2, h3, h4, h5, h6 {
+  color: var(--ctp-macchiato-subtext1) !important;
   border-bottom: 0 !important;
   font-weight: var(--regular) !important;
 }
@@ -85,7 +87,7 @@ h2, h3, h4, h5, h6 {
 *********************************************************************************/
 
 a {
-  color: var(--ctp-macchiato-rosewater) !important;
+  color: var(--ctp-macchiato-blue) !important;
   text-decoration: underline !important;
 }
 
