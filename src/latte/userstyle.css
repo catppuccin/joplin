@@ -62,7 +62,7 @@ strong {
 
 hr {
   border: none;
-  border-bottom: 1px solid var(--ctp-latte-base) !important;
+  border-bottom: 1px solid var(--ctp-latte-overlay1) !important;
   margin: 2.5em 0 !important;
 }
 
@@ -83,7 +83,7 @@ h1 {
 }
 
 h2, h3, h4, h5, h6 {
-  color: var(--ctp-latte-text) !important;
+  color: var(--ctp-latte-subtext1) !important;
   border-bottom: 0 !important;
   font-weight: var(--bold) !important;
 }
@@ -93,7 +93,7 @@ h2, h3, h4, h5, h6 {
 *********************************************************************************/
 
 a {
-  color: var(--ctp-latte-rosewater) !important;
+  color: var(--ctp-latte-blue) !important;
   text-decoration: underline !important;
 }
 
