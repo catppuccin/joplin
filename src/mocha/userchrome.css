@@ -233,7 +233,7 @@ div[height="50"] button span {
   color: var(--ctp-mocha-text) !important;
 }
 
-.sc-hCPjZK.fJjcQe {
+.sc-dtInlm.dUXxSp {
   background-color: var(--ctp-mocha-mantle) !important;
 }
 .new-note-todo-buttons > button {
@@ -275,7 +275,15 @@ div[height="50"] button span {
   background-color: var(--ctp-mocha-overlay1) !important;
 }
 
+.note-list-item:hover {
+  background-color: var(--ctp-mocha-overlay0) !important;
+}
+
 .item-list.note-list .list-item-container::before {
+  border: none !important;
+}
+
+.note-list-item::before{
   border: none !important;
 }
 
@@ -287,11 +295,22 @@ div[height="50"] button span {
 
 .note-list .list-item-container a:focus {
   color: var(--ctp-mocha-text) !important;
+}
+
+.list-item-wrapper.-selected {
   background-color: var(--ctp-mocha-base) !important;
+}
+
+.note-list-item > .content.-selected {
+  background-color: var(--ctp-mocha-surface2) !important;
 }
 
 .note-list .list-item-container a:hover {
   color: var(--ctp-mocha-text) !important;
+}
+
+.list-item-wrapper.-highlight-on-hover:hover {
+  background-color: var(--ctp-mocha-surface1);
 }
 
 /* Add "..." to notes with long titles */
@@ -408,6 +427,11 @@ a[Title="Tags"] + div > span {
 /* Header */
 .cm-header {
   color: var(--ctp-mocha-lavender) !important;
+}
+
+/* Markdown editor */
+.cm-editor{
+    background-color: var(--ctp-mocha-base) !important
 }
 
 /* Italics/Emphasis, Bold, BoldItalics */
