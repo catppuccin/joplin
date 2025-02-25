@@ -61,7 +61,7 @@ strong {
 
 hr {
   border: none;
-  border-bottom: 1px solid var(--ctp-mocha-base) !important;
+  border-bottom: 1px solid var(--ctp-mocha-overlay1) !important;
   margin: 2.5em 0 !important;
 }
 
@@ -76,11 +76,13 @@ hr {
 *********************************************************************************/
 
 h1 {
+  color: var(--ctp-mocha-text);
   border-bottom: 1px solid var(--ctp-mocha-base) !important;
   font-weight: var(--bolder) !important;
 }
 
 h2, h3, h4, h5, h6 {
+  color: var(--ctp-mocha-subtext1);
   border-bottom: 0 !important;
   font-weight: var(--regular) !important;
 }
@@ -90,7 +92,7 @@ h2, h3, h4, h5, h6 {
 *********************************************************************************/
 
 a {
-  color: var(--ctp-mocha-rosewater) !important;
+  color: var(--ctp-mocha-blue) !important;
   text-decoration: underline !important;
 }
 
