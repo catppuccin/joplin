@@ -44,6 +44,7 @@
 /* Font used by Joplin */
 * {
   font-family: var(--font-face) !important;
+  color: var(--ctp-latte-text) !important;
 }
 
 html, body {
@@ -266,6 +267,9 @@ div[height="50"] button span {
 .new-note-todo-buttons > button {
   background-color: var(--ctp-latte-lavender) !important;
   border: none !important;
+}
+.new-note-button > span {
+  color: var(--ctp-latte-mantle) !important;
 }
 .new-todo-button > span {
   color: var(--ctp-latte-mantle) !important;
