@@ -20,7 +20,7 @@
 1. Download the files `userchrome.css` and `userstyle.css` from your preferred flavour from the `src/` directory.
 2. Move these files to the Joplin configuration directory:\
    Linux/macOS: `~/.config/joplin-desktop/`\
-   Windows: `C:\Users\%USERNAME%\.config\joplin\`
+   Windows: `C:\Users\%USERNAME%\.config\joplin-desktop\`
 3. You need the [Rich Markdown Plugin](https://github.com/CalebJohn/joplin-rich-markdown) and need to enable extra CSS options by going into `Options -> Rich Markdown -> Add additional CSS classes for enhanced customization`.
 4. Enable the dark theme from Appearance to use the theme. 
 ## 🙋 FAQ
